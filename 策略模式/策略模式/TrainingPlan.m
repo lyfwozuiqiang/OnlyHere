@@ -26,8 +26,13 @@
 }
 
 - (NSInvocation *)invocationWithMethod:(SEL)selector {
-    //"v@:@"--> v-返回值类型 @-方法接收者 :-方法名 @-参数
+//"v@:@"--> v-返回值类型 @-方法接收者 :-方法名 @-参数
     NSMethodSignature *methodSignature = [NSMethodSignature signatureWithObjCTypes:"v@:@"];
+//获取类方法或实例方法的签名，
+//    NSMethodSignature *methodSignature = [self methodSignatureForSelector:selector];
+//获取实例方法的签名
+//    NSMethodSignature *methodSignature = [self instanceMethodSignatureForSelector:selector];
+//使用上述两个方法，不可以增加参数
     NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:methodSignature];
     invocation.target = self;
     invocation.selector = selector;
