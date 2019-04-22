@@ -58,7 +58,8 @@
     
     if (!_listArray) {
         
-        _listArray = [NSArray arrayWithObjects:@{@"title":@"旋转加载",@"controller":@"CircleLoadingViewController"}, nil];
+        _listArray = [NSArray arrayWithObjects:@{@"title":@"旋转加载",@"controller":@"CircleLoadingViewController"},
+                                               @{@"title":@"弹簧动画",@"controller":@"SpringViewController"},nil];
     }
     
     return _listArray;

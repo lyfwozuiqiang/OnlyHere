@@ -18,6 +18,8 @@
 		0125F1EB22603105001AF370 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125F1EA22603105001AF370 /* ____UITests.m */; };
 		0125F1FC226035FA001AF370 /* CircleLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125F1FA226035FA001AF370 /* CircleLoadingViewController.m */; };
 		0125F1FD226035FA001AF370 /* CircleLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0125F1FB226035FA001AF370 /* CircleLoadingViewController.xib */; };
+		01DBBBEA226D6FC800BBA1DC /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DBBBE8226D6FC800BBA1DC /* SpringViewController.m */; };
+		01DBBBEB226D6FC800BBA1DC /* SpringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DBBBE9226D6FC800BBA1DC /* SpringViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		0125F1FA226035FA001AF370 /* CircleLoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleLoadingViewController.m; sourceTree = "<group>"; };
 		0125F1FB226035FA001AF370 /* CircleLoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleLoadingViewController.xib; sourceTree = "<group>"; };
 		0125F1FE2260391B001AF370 /* AnimationDemoHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationDemoHeader.pch; sourceTree = "<group>"; };
+		01DBBBE7226D6FC800BBA1DC /* SpringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpringViewController.h; sourceTree = "<group>"; };
+		01DBBBE8226D6FC800BBA1DC /* SpringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringViewController.m; sourceTree = "<group>"; };
+		01DBBBE9226D6FC800BBA1DC /* SpringViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpringViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,7 @@
 		0125F1C222603105001AF370 /* 动画演示 */ = {
 			isa = PBXGroup;
 			children = (
+				01DBBBE6226D6FAC00BBA1DC /* 弹簧动画 */,
 				0125F1F8226035DF001AF370 /* CircleLoading */,
 				0125F1C322603105001AF370 /* AppDelegate.h */,
 				0125F1C422603105001AF370 /* AppDelegate.m */,
@@ -151,6 +157,16 @@
 				0125F1FB226035FA001AF370 /* CircleLoadingViewController.xib */,
 			);
 			path = CircleLoading;
+			sourceTree = "<group>";
+		};
+		01DBBBE6226D6FAC00BBA1DC /* 弹簧动画 */ = {
+			isa = PBXGroup;
+			children = (
+				01DBBBE7226D6FC800BBA1DC /* SpringViewController.h */,
+				01DBBBE8226D6FC800BBA1DC /* SpringViewController.m */,
+				01DBBBE9226D6FC800BBA1DC /* SpringViewController.xib */,
+			);
+			path = "弹簧动画";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DBBBEB226D6FC800BBA1DC /* SpringViewController.xib in Resources */,
 				0125F1D322603105001AF370 /* LaunchScreen.storyboard in Resources */,
 				0125F1D022603105001AF370 /* Assets.xcassets in Resources */,
 				0125F1CB22603105001AF370 /* Main.storyboard in Resources */,
@@ -289,6 +306,7 @@
 				0125F1CE22603105001AF370 /* ____.xcdatamodeld in Sources */,
 				0125F1D622603105001AF370 /* main.m in Sources */,
 				0125F1C522603105001AF370 /* AppDelegate.m in Sources */,
+				01DBBBEA226D6FC800BBA1DC /* SpringViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
