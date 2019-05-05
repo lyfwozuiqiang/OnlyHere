@@ -104,4 +104,9 @@
     
     return _animationView;
 }
+
+- (void)dealloc {
+    
+    NSLog(@"%@_dealloc",self.class);
+}
 @end

@@ -18,6 +18,9 @@
 		0125F1EB22603105001AF370 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125F1EA22603105001AF370 /* ____UITests.m */; };
 		0125F1FC226035FA001AF370 /* CircleLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125F1FA226035FA001AF370 /* CircleLoadingViewController.m */; };
 		0125F1FD226035FA001AF370 /* CircleLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0125F1FB226035FA001AF370 /* CircleLoadingViewController.xib */; };
+		015031B8226EBEB400B9DE3C /* CircleExpandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015031B6226EBEB400B9DE3C /* CircleExpandViewController.m */; };
+		015031B9226EBEB400B9DE3C /* CircleExpandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015031B7226EBEB400B9DE3C /* CircleExpandViewController.xib */; };
+		015031BC226EED2F00B9DE3C /* CircleExpandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 015031BB226EED2F00B9DE3C /* CircleExpandView.m */; };
 		01DBBBEA226D6FC800BBA1DC /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DBBBE8226D6FC800BBA1DC /* SpringViewController.m */; };
 		01DBBBEB226D6FC800BBA1DC /* SpringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DBBBE9226D6FC800BBA1DC /* SpringViewController.xib */; };
 /* End PBXBuildFile section */
@@ -61,6 +64,11 @@
 		0125F1FA226035FA001AF370 /* CircleLoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleLoadingViewController.m; sourceTree = "<group>"; };
 		0125F1FB226035FA001AF370 /* CircleLoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleLoadingViewController.xib; sourceTree = "<group>"; };
 		0125F1FE2260391B001AF370 /* AnimationDemoHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationDemoHeader.pch; sourceTree = "<group>"; };
+		015031B5226EBEB400B9DE3C /* CircleExpandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleExpandViewController.h; sourceTree = "<group>"; };
+		015031B6226EBEB400B9DE3C /* CircleExpandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleExpandViewController.m; sourceTree = "<group>"; };
+		015031B7226EBEB400B9DE3C /* CircleExpandViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleExpandViewController.xib; sourceTree = "<group>"; };
+		015031BA226EED2F00B9DE3C /* CircleExpandView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleExpandView.h; sourceTree = "<group>"; };
+		015031BB226EED2F00B9DE3C /* CircleExpandView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleExpandView.m; sourceTree = "<group>"; };
 		01DBBBE7226D6FC800BBA1DC /* SpringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpringViewController.h; sourceTree = "<group>"; };
 		01DBBBE8226D6FC800BBA1DC /* SpringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringViewController.m; sourceTree = "<group>"; };
 		01DBBBE9226D6FC800BBA1DC /* SpringViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpringViewController.xib; sourceTree = "<group>"; };
@@ -114,6 +122,7 @@
 		0125F1C222603105001AF370 /* 动画演示 */ = {
 			isa = PBXGroup;
 			children = (
+				015031B4226EBE8D00B9DE3C /* 水波纹 */,
 				01DBBBE6226D6FAC00BBA1DC /* 弹簧动画 */,
 				0125F1F8226035DF001AF370 /* CircleLoading */,
 				0125F1C322603105001AF370 /* AppDelegate.h */,
@@ -157,6 +166,18 @@
 				0125F1FB226035FA001AF370 /* CircleLoadingViewController.xib */,
 			);
 			path = CircleLoading;
+			sourceTree = "<group>";
+		};
+		015031B4226EBE8D00B9DE3C /* 水波纹 */ = {
+			isa = PBXGroup;
+			children = (
+				015031B5226EBEB400B9DE3C /* CircleExpandViewController.h */,
+				015031B6226EBEB400B9DE3C /* CircleExpandViewController.m */,
+				015031B7226EBEB400B9DE3C /* CircleExpandViewController.xib */,
+				015031BA226EED2F00B9DE3C /* CircleExpandView.h */,
+				015031BB226EED2F00B9DE3C /* CircleExpandView.m */,
+			);
+			path = "水波纹";
 			sourceTree = "<group>";
 		};
 		01DBBBE6226D6FAC00BBA1DC /* 弹簧动画 */ = {
@@ -276,6 +297,7 @@
 				0125F1D322603105001AF370 /* LaunchScreen.storyboard in Resources */,
 				0125F1D022603105001AF370 /* Assets.xcassets in Resources */,
 				0125F1CB22603105001AF370 /* Main.storyboard in Resources */,
+				015031B9226EBEB400B9DE3C /* CircleExpandViewController.xib in Resources */,
 				0125F1FD226035FA001AF370 /* CircleLoadingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +325,8 @@
 			files = (
 				0125F1C822603105001AF370 /* ViewController.m in Sources */,
 				0125F1FC226035FA001AF370 /* CircleLoadingViewController.m in Sources */,
+				015031BC226EED2F00B9DE3C /* CircleExpandView.m in Sources */,
+				015031B8226EBEB400B9DE3C /* CircleExpandViewController.m in Sources */,
 				0125F1CE22603105001AF370 /* ____.xcdatamodeld in Sources */,
 				0125F1D622603105001AF370 /* main.m in Sources */,
 				0125F1C522603105001AF370 /* AppDelegate.m in Sources */,
