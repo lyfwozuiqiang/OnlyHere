@@ -22,7 +22,9 @@
 //多任务并行，都结束后进行回调实现
 //    [self dispatchGroup];
 //    [self dispatchBarrierAsync];
-    [self dispatch_semaphore_t_test];
+//    [self dispatch_semaphore_t_test];
+    
+    [self dispatchApply];
 }
 
 #pragma mark - 线程死锁
@@ -114,6 +116,15 @@
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         sleep(1);
         NSLog(@"4");
+    });
+}
+
+#pragma mark - 多线程遍历方式(index顺序取决于queue类型)
+- (void)dispatchApply {
+    
+    dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);//DISPATCH_QUEUE_SERIAL
+    dispatch_apply(4, queue, ^(size_t index) {
+        NSLog(@"%zu",index);
     });
 }
 
