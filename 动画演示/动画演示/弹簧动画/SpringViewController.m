@@ -76,8 +76,6 @@
             }];
         }
     }];
-    
-    
 }
 #pragma mark - Lazy
 - (CAShapeLayer *)linerShapeLayer {

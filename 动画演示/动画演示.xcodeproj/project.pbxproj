@@ -23,6 +23,7 @@
 		015031BC226EED2F00B9DE3C /* CircleExpandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 015031BB226EED2F00B9DE3C /* CircleExpandView.m */; };
 		0173EAFD23594D760057DA3E /* RollLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0173EAFB23594D760057DA3E /* RollLoadViewController.m */; };
 		0173EAFE23594D760057DA3E /* RollLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0173EAFC23594D760057DA3E /* RollLoadViewController.xib */; };
+		0173EB0123598B5F0057DA3E /* ReplicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0173EB0023598B5F0057DA3E /* ReplicatorView.m */; };
 		01DBBBEA226D6FC800BBA1DC /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DBBBE8226D6FC800BBA1DC /* SpringViewController.m */; };
 		01DBBBEB226D6FC800BBA1DC /* SpringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DBBBE9226D6FC800BBA1DC /* SpringViewController.xib */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,8 @@
 		0173EAFA23594D760057DA3E /* RollLoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RollLoadViewController.h; sourceTree = "<group>"; };
 		0173EAFB23594D760057DA3E /* RollLoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RollLoadViewController.m; sourceTree = "<group>"; };
 		0173EAFC23594D760057DA3E /* RollLoadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RollLoadViewController.xib; sourceTree = "<group>"; };
+		0173EAFF23598B5F0057DA3E /* ReplicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReplicatorView.h; sourceTree = "<group>"; };
+		0173EB0023598B5F0057DA3E /* ReplicatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplicatorView.m; sourceTree = "<group>"; };
 		01DBBBE7226D6FC800BBA1DC /* SpringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpringViewController.h; sourceTree = "<group>"; };
 		01DBBBE8226D6FC800BBA1DC /* SpringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringViewController.m; sourceTree = "<group>"; };
 		01DBBBE9226D6FC800BBA1DC /* SpringViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpringViewController.xib; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 				0173EAFA23594D760057DA3E /* RollLoadViewController.h */,
 				0173EAFB23594D760057DA3E /* RollLoadViewController.m */,
 				0173EAFC23594D760057DA3E /* RollLoadViewController.xib */,
+				0173EAFF23598B5F0057DA3E /* ReplicatorView.h */,
+				0173EB0023598B5F0057DA3E /* ReplicatorView.m */,
 			);
 			path = "加载样式";
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0173EAFD23594D760057DA3E /* RollLoadViewController.m in Sources */,
+				0173EB0123598B5F0057DA3E /* ReplicatorView.m in Sources */,
 				0125F1C822603105001AF370 /* ViewController.m in Sources */,
 				0125F1FC226035FA001AF370 /* CircleLoadingViewController.m in Sources */,
 				015031BC226EED2F00B9DE3C /* CircleExpandView.m in Sources */,

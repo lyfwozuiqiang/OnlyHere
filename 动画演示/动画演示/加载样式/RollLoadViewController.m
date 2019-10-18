@@ -8,6 +8,8 @@
 
 #import "RollLoadViewController.h"
 
+#import "ReplicatorView.h"
+
 @interface RollLoadViewController ()
 
 @property (strong, nonatomic) CAShapeLayer *shapeLayer;
@@ -38,6 +40,9 @@
     basicAnimation.duration = 3;
     basicAnimation.repeatCount = HUGE;
     [self.shapeLayer addAnimation:basicAnimation forKey:@"basicAnimation"];
+    
+    ReplicatorView *replicatorView = [[ReplicatorView alloc] initWithFrame:CGRectMake(0, 300, SCREENWIDTH, 100)];
+    [self.view addSubview:replicatorView];
 }
 
 - (void)dealloc {
