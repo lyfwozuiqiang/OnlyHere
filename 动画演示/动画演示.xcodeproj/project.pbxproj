@@ -21,6 +21,8 @@
 		015031B8226EBEB400B9DE3C /* CircleExpandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015031B6226EBEB400B9DE3C /* CircleExpandViewController.m */; };
 		015031B9226EBEB400B9DE3C /* CircleExpandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015031B7226EBEB400B9DE3C /* CircleExpandViewController.xib */; };
 		015031BC226EED2F00B9DE3C /* CircleExpandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 015031BB226EED2F00B9DE3C /* CircleExpandView.m */; };
+		0173EAFD23594D760057DA3E /* RollLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0173EAFB23594D760057DA3E /* RollLoadViewController.m */; };
+		0173EAFE23594D760057DA3E /* RollLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0173EAFC23594D760057DA3E /* RollLoadViewController.xib */; };
 		01DBBBEA226D6FC800BBA1DC /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DBBBE8226D6FC800BBA1DC /* SpringViewController.m */; };
 		01DBBBEB226D6FC800BBA1DC /* SpringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DBBBE9226D6FC800BBA1DC /* SpringViewController.xib */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,9 @@
 		015031B7226EBEB400B9DE3C /* CircleExpandViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleExpandViewController.xib; sourceTree = "<group>"; };
 		015031BA226EED2F00B9DE3C /* CircleExpandView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleExpandView.h; sourceTree = "<group>"; };
 		015031BB226EED2F00B9DE3C /* CircleExpandView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleExpandView.m; sourceTree = "<group>"; };
+		0173EAFA23594D760057DA3E /* RollLoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RollLoadViewController.h; sourceTree = "<group>"; };
+		0173EAFB23594D760057DA3E /* RollLoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RollLoadViewController.m; sourceTree = "<group>"; };
+		0173EAFC23594D760057DA3E /* RollLoadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RollLoadViewController.xib; sourceTree = "<group>"; };
 		01DBBBE7226D6FC800BBA1DC /* SpringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpringViewController.h; sourceTree = "<group>"; };
 		01DBBBE8226D6FC800BBA1DC /* SpringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringViewController.m; sourceTree = "<group>"; };
 		01DBBBE9226D6FC800BBA1DC /* SpringViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpringViewController.xib; sourceTree = "<group>"; };
@@ -122,6 +127,7 @@
 		0125F1C222603105001AF370 /* 动画演示 */ = {
 			isa = PBXGroup;
 			children = (
+				0173EAF923594CDF0057DA3E /* 加载样式 */,
 				015031B4226EBE8D00B9DE3C /* 水波纹 */,
 				01DBBBE6226D6FAC00BBA1DC /* 弹簧动画 */,
 				0125F1F8226035DF001AF370 /* CircleLoading */,
@@ -178,6 +184,16 @@
 				015031BB226EED2F00B9DE3C /* CircleExpandView.m */,
 			);
 			path = "水波纹";
+			sourceTree = "<group>";
+		};
+		0173EAF923594CDF0057DA3E /* 加载样式 */ = {
+			isa = PBXGroup;
+			children = (
+				0173EAFA23594D760057DA3E /* RollLoadViewController.h */,
+				0173EAFB23594D760057DA3E /* RollLoadViewController.m */,
+				0173EAFC23594D760057DA3E /* RollLoadViewController.xib */,
+			);
+			path = "加载样式";
 			sourceTree = "<group>";
 		};
 		01DBBBE6226D6FAC00BBA1DC /* 弹簧动画 */ = {
@@ -298,6 +314,7 @@
 				0125F1D022603105001AF370 /* Assets.xcassets in Resources */,
 				0125F1CB22603105001AF370 /* Main.storyboard in Resources */,
 				015031B9226EBEB400B9DE3C /* CircleExpandViewController.xib in Resources */,
+				0173EAFE23594D760057DA3E /* RollLoadViewController.xib in Resources */,
 				0125F1FD226035FA001AF370 /* CircleLoadingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0173EAFD23594D760057DA3E /* RollLoadViewController.m in Sources */,
 				0125F1C822603105001AF370 /* ViewController.m in Sources */,
 				0125F1FC226035FA001AF370 /* CircleLoadingViewController.m in Sources */,
 				015031BC226EED2F00B9DE3C /* CircleExpandView.m in Sources */,

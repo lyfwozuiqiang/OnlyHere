@@ -50,6 +50,7 @@
     
     NextViewController *nextViewController = [NextViewController new];
     nextViewController.transitioningDelegate = self;
+    nextViewController.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:nextViewController animated:YES completion:nil];
 }
 

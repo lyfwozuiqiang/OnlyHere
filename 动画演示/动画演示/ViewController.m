@@ -57,10 +57,11 @@
 - (NSArray *)listArray {
     
     if (!_listArray) {
-        
+
         _listArray = [NSArray arrayWithObjects:@{@"title":@"旋转加载",@"controller":@"CircleLoadingViewController"},
                                                @{@"title":@"弹簧动画",@"controller":@"SpringViewController"},
-                                               @{@"title":@"水波纹",@"controller":@"CircleExpandViewController"},nil];
+                                               @{@"title":@"水波纹",@"controller":@"CircleExpandViewController"},
+                                               @{@"title":@"加载进度",@"controller":@"RollLoadViewController"},nil];
     }
     
     return _listArray;

@@ -10,6 +10,8 @@
 
 @interface GCDViewController ()
 
+@property (strong, nonatomic) NSArray *testArray;
+
 @end
 
 @implementation GCDViewController
@@ -24,7 +26,8 @@
 //    [self dispatchBarrierAsync];
 //    [self dispatch_semaphore_t_test];
     
-    [self dispatchApply];
+//    [self dispatchApply];
+    [self synchronizedCrashTest];
 }
 
 #pragma mark - 线程死锁
@@ -146,6 +149,39 @@
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
     
     NSLog(@"2");
+}
+
+#pragma mark - 单方面加锁并不能解决多线程访问问题
+- (void)synchronizedCrashTest {
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+//        @synchronized (self) { //不使用此时会crash
+            for (int i = 0; i < 100000; i ++) {
+                if (i % 2 == 0) {
+                    self.testArray = @[@"1", @"2", @"3"];
+                }
+                else {
+                    self.testArray = @[@"1"];
+                }
+                NSLog(@"Thread A: %@\n", self.testArray);
+            }
+//        }
+    });
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        @synchronized (self) {
+            for (int i = 0; i < 10000; i ++) {
+                if (self.testArray.count >= 2) {
+                    NSString *str = [self.testArray objectAtIndex:1];
+                    if (i%100 == 0) {
+                        NSLog(@"%@",str);
+                    }
+                }
+                NSLog(@"Thread B: %@\n", self.testArray);
+            }
+        }
+    });
 }
 
 - (void)dealloc {
