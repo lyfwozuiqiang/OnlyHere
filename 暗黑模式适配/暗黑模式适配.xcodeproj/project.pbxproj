@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0164B6982405FD4C006401C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0164B6972405FD4C006401C9 /* AppDelegate.m */; };
+		0164B69B2405FD4C006401C9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0164B69A2405FD4C006401C9 /* SceneDelegate.m */; };
+		0164B69E2405FD4C006401C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0164B69D2405FD4C006401C9 /* ViewController.m */; };
+		0164B6A12405FD4C006401C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0164B69F2405FD4C006401C9 /* Main.storyboard */; };
+		0164B6A32405FD4D006401C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0164B6A22405FD4D006401C9 /* Assets.xcassets */; };
+		0164B6A62405FD4D006401C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0164B6A42405FD4D006401C9 /* LaunchScreen.storyboard */; };
+		0164B6A92405FD4D006401C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0164B6A82405FD4D006401C9 /* main.m */; };
+		0164B6B32405FD4D006401C9 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0164B6B22405FD4D006401C9 /* ______Tests.m */; };
+		0164B6BE2405FDA1006401C9 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0164B6BD2405FDA1006401C9 /* ColorAssets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0164B6AF2405FD4D006401C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0164B68B2405FD4C006401C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0164B6922405FD4C006401C9;
+			remoteInfo = "暗黑模式适配";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0164B6932405FD4C006401C9 /* 暗黑模式适配.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "暗黑模式适配.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0164B6962405FD4C006401C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0164B6972405FD4C006401C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0164B6992405FD4C006401C9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		0164B69A2405FD4C006401C9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		0164B69C2405FD4C006401C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0164B69D2405FD4C006401C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0164B6A02405FD4C006401C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0164B6A22405FD4D006401C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0164B6A52405FD4D006401C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0164B6A72405FD4D006401C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0164B6A82405FD4D006401C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0164B6AE2405FD4D006401C9 /* 暗黑模式适配Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "暗黑模式适配Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0164B6B22405FD4D006401C9 /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
+		0164B6B42405FD4D006401C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0164B6BD2405FDA1006401C9 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0164B6902405FD4C006401C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0164B6AB2405FD4D006401C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0164B68A2405FD4C006401C9 = {
+			isa = PBXGroup;
+			children = (
+				0164B6952405FD4C006401C9 /* 暗黑模式适配 */,
+				0164B6B12405FD4D006401C9 /* 暗黑模式适配Tests */,
+				0164B6942405FD4C006401C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0164B6942405FD4C006401C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0164B6932405FD4C006401C9 /* 暗黑模式适配.app */,
+				0164B6AE2405FD4D006401C9 /* 暗黑模式适配Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0164B6952405FD4C006401C9 /* 暗黑模式适配 */ = {
+			isa = PBXGroup;
+			children = (
+				0164B6962405FD4C006401C9 /* AppDelegate.h */,
+				0164B6972405FD4C006401C9 /* AppDelegate.m */,
+				0164B6992405FD4C006401C9 /* SceneDelegate.h */,
+				0164B69A2405FD4C006401C9 /* SceneDelegate.m */,
+				0164B69C2405FD4C006401C9 /* ViewController.h */,
+				0164B69D2405FD4C006401C9 /* ViewController.m */,
+				0164B69F2405FD4C006401C9 /* Main.storyboard */,
+				0164B6A22405FD4D006401C9 /* Assets.xcassets */,
+				0164B6BD2405FDA1006401C9 /* ColorAssets.xcassets */,
+				0164B6A42405FD4D006401C9 /* LaunchScreen.storyboard */,
+				0164B6A72405FD4D006401C9 /* Info.plist */,
+				0164B6A82405FD4D006401C9 /* main.m */,
+			);
+			path = "暗黑模式适配";
+			sourceTree = "<group>";
+		};
+		0164B6B12405FD4D006401C9 /* 暗黑模式适配Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0164B6B22405FD4D006401C9 /* ______Tests.m */,
+				0164B6B42405FD4D006401C9 /* Info.plist */,
+			);
+			path = "暗黑模式适配Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0164B6922405FD4C006401C9 /* 暗黑模式适配 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0164B6B72405FD4D006401C9 /* Build configuration list for PBXNativeTarget "暗黑模式适配" */;
+			buildPhases = (
+				0164B68F2405FD4C006401C9 /* Sources */,
+				0164B6902405FD4C006401C9 /* Frameworks */,
+				0164B6912405FD4C006401C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "暗黑模式适配";
+			productName = "暗黑模式适配";
+			productReference = 0164B6932405FD4C006401C9 /* 暗黑模式适配.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0164B6AD2405FD4D006401C9 /* 暗黑模式适配Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0164B6BA2405FD4D006401C9 /* Build configuration list for PBXNativeTarget "暗黑模式适配Tests" */;
+			buildPhases = (
+				0164B6AA2405FD4D006401C9 /* Sources */,
+				0164B6AB2405FD4D006401C9 /* Frameworks */,
+				0164B6AC2405FD4D006401C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0164B6B02405FD4D006401C9 /* PBXTargetDependency */,
+			);
+			name = "暗黑模式适配Tests";
+			productName = "暗黑模式适配Tests";
+			productReference = 0164B6AE2405FD4D006401C9 /* 暗黑模式适配Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0164B68B2405FD4C006401C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = None;
+				TargetAttributes = {
+					0164B6922405FD4C006401C9 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					0164B6AD2405FD4D006401C9 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 0164B6922405FD4C006401C9;
+					};
+				};
+			};
+			buildConfigurationList = 0164B68E2405FD4C006401C9 /* Build configuration list for PBXProject "暗黑模式适配" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0164B68A2405FD4C006401C9;
+			productRefGroup = 0164B6942405FD4C006401C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0164B6922405FD4C006401C9 /* 暗黑模式适配 */,
+				0164B6AD2405FD4D006401C9 /* 暗黑模式适配Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0164B6912405FD4C006401C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0164B6A62405FD4D006401C9 /* LaunchScreen.storyboard in Resources */,
+				0164B6A32405FD4D006401C9 /* Assets.xcassets in Resources */,
+				0164B6BE2405FDA1006401C9 /* ColorAssets.xcassets in Resources */,
+				0164B6A12405FD4C006401C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0164B6AC2405FD4D006401C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0164B68F2405FD4C006401C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0164B69E2405FD4C006401C9 /* ViewController.m in Sources */,
+				0164B6982405FD4C006401C9 /* AppDelegate.m in Sources */,
+				0164B6A92405FD4D006401C9 /* main.m in Sources */,
+				0164B69B2405FD4C006401C9 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0164B6AA2405FD4D006401C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0164B6B32405FD4D006401C9 /* ______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0164B6B02405FD4D006401C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0164B6922405FD4C006401C9 /* 暗黑模式适配 */;
+			targetProxy = 0164B6AF2405FD4D006401C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0164B69F2405FD4C006401C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0164B6A02405FD4C006401C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0164B6A42405FD4D006401C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0164B6A52405FD4D006401C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0164B6B52405FD4D006401C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0164B6B62405FD4D006401C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0164B6B82405FD4D006401C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "暗黑模式适配/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "None.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0164B6B92405FD4D006401C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "暗黑模式适配/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "None.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0164B6BB2405FD4D006401C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "暗黑模式适配Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "None.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/暗黑模式适配.app/暗黑模式适配";
+			};
+			name = Debug;
+		};
+		0164B6BC2405FD4D006401C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "暗黑模式适配Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "None.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/暗黑模式适配.app/暗黑模式适配";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0164B68E2405FD4C006401C9 /* Build configuration list for PBXProject "暗黑模式适配" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0164B6B52405FD4D006401C9 /* Debug */,
+				0164B6B62405FD4D006401C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0164B6B72405FD4D006401C9 /* Build configuration list for PBXNativeTarget "暗黑模式适配" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0164B6B82405FD4D006401C9 /* Debug */,
+				0164B6B92405FD4D006401C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0164B6BA2405FD4D006401C9 /* Build configuration list for PBXNativeTarget "暗黑模式适配Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0164B6BB2405FD4D006401C9 /* Debug */,
+				0164B6BC2405FD4D006401C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0164B68B2405FD4C006401C9 /* Project object */;
+}
