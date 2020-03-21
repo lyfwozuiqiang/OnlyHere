@@ -16,6 +16,7 @@
 		012E119A241B6501008E3179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 012E1199241B6501008E3179 /* main.m */; };
 		012E11A4241B6501008E3179 /* RuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 012E11A3241B6501008E3179 /* RuntimeTests.m */; };
 		012E11B0241B6524008E3179 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 012E11AF241B6524008E3179 /* Video.m */; };
+		012E11B7241F593F008E3179 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 012E11B6241F593F008E3179 /* NSObject+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,9 @@
 		012E11A5241B6501008E3179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		012E11AE241B6524008E3179 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		012E11AF241B6524008E3179 /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		012E11B4241F58D4008E3179 /* NSObject+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		012E11B5241F593F008E3179 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		012E11B6241F593F008E3179 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,9 @@
 				012E118E241B6500008E3179 /* ViewController.m */,
 				012E11AE241B6524008E3179 /* Video.h */,
 				012E11AF241B6524008E3179 /* Video.m */,
+				012E11B4241F58D4008E3179 /* NSObject+Extension.h */,
+				012E11B5241F593F008E3179 /* NSObject+Category.h */,
+				012E11B6241F593F008E3179 /* NSObject+Category.m */,
 				012E1190241B6500008E3179 /* Main.storyboard */,
 				012E1193241B6501008E3179 /* Assets.xcassets */,
 				012E1195241B6501008E3179 /* LaunchScreen.storyboard */,
@@ -218,6 +225,7 @@
 				012E119A241B6501008E3179 /* main.m in Sources */,
 				012E11B0241B6524008E3179 /* Video.m in Sources */,
 				012E118C241B6500008E3179 /* SceneDelegate.m in Sources */,
+				012E11B7241F593F008E3179 /* NSObject+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

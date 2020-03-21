@@ -11,6 +11,9 @@
 #import "Video.h"
 #import <objc/runtime.h>
 
+#import "NSObject+Category.h"
+#import "NSObject+Extension.h"
+
 @interface ViewController ()
 
 @end
@@ -20,9 +23,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self getIvarsList];
-    [self getPropertysList];
-    [self getMethodsList];
+//    [self getIvarsList];
+//    [self getPropertysList];
+//    [self getMethodsList];
+    
+    Video *video = [[Video alloc] init];
+    [video sayHello];//测试NSObject添加Extension
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    [video performSelector:NSSelectorFromString(@"replay")];//消息转发
+    #pragma clang diagnostic pop
 }
 
 ///获取成员变量+实例变量
