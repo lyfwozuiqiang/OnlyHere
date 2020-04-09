@@ -8,6 +8,19 @@
 
 #import "Person.h"
 
+@interface Person()
+@property (assign, nonatomic) NSInteger age;
+@end
 @implementation Person
+
+- (instancetype)init {
+    self = [super init];
+    self.age = 1;
+    return self;
+}
+
+- (void)setAge:(NSInteger)age {
+    _age = age;
+}
 
 @end

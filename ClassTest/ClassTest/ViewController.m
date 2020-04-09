@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import <objc/runtime.h>
+
 #import "Person.h"
 #import "Student.h"
 
@@ -80,8 +82,14 @@
 //+ (BOOL)isMemberOfClass:(Class)cls {
 //    return object_getClass((id)self) == cls;
 //}
+
 //- (BOOL)isMemberOfClass:(Class)cls {
 //    return [self class] == cls;
+//}
+
+//Class object_getClass(id obj) {
+//    if (obj) return obj->getIsa();
+//    else return Nil;
 //}
 - (void)isMemberOfClassTest {
 //Returns a Boolean value that indicates whether the receiver is an instance of a given class.
@@ -90,5 +98,12 @@
     NSLog(@"class %@",@([student isMemberOfClass:[Student class]]));
     NSLog(@"instance %@",@([Student isMemberOfClass:[Student class]]));
     NSLog(@"----%@",@([[NSObject class] isMemberOfClass:[NSObject class]]));
+    Class getStudentClass = object_getClass(student);
+    Person *person = [Person new];
+    Class getPersonClass = object_getClass(person);
+    NSLog(@"getStudentClass == %@  getPersonClass == %@",getStudentClass,getPersonClass);
+    NSLog(@"== %@  == %@",object_getClass([NSObject new]),object_getClass([[NSObject superclass] new]));
+    Class setClass = object_setClass(person, [student class]);
+    NSLog(@"setClass == %@",setClass);
 }
 @end
