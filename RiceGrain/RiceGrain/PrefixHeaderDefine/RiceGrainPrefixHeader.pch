@@ -1,0 +1,22 @@
+//
+//  RiceGrainPrefixHeader.pch
+//  RiceGrain
+//
+//  Created by 刘伟 on 2020/6/11.
+//  Copyright © 2020 None. All rights reserved.
+//
+
+#ifndef RiceGrainPrefixHeader_pch
+#define RiceGrainPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIColor+Category.h"
+
+#import "SimpleWriteDeifne.h"
+#import "UserdefaultsDefine.h"
+#import "NotificationDefine.h"
+
+#import "ThirdPartService.h"
+
+#endif /* RiceGrainPrefixHeader_pch */

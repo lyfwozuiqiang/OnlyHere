@@ -1,0 +1,9 @@
+platform :ios, ‘11.0’
+inhibit_all_warnings!
+
+target :RiceGrain do
+
+    pod 'MJRefresh', '~> 3.4.3'
+    pod 'MJExtension', '~> 3.2.1'
+    pod 'AFNetworking', '~> 3.2.1'
+end
