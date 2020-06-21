@@ -11,12 +11,16 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-#import "UIColor+Category.h"
 
 #import "SimpleWriteDeifne.h"
 #import "UserdefaultsDefine.h"
 #import "NotificationDefine.h"
 
 #import "ThirdPartService.h"
+
+#import "UIColor+Category.h"
+#import "UIBarButtonItem+Category.h"
+
+#import "LoginController.h"
 
 #endif /* RiceGrainPrefixHeader_pch */

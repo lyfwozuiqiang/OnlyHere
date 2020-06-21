@@ -15,8 +15,8 @@
 
 #define AppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 #define DeviceVersion [UIDevice currentDevice].systemVersion
-#define Bool ios13Later [DeviceVersion floatValue] >= 13.0
 
+#define Bool ios13Later [DeviceVersion floatValue] >= 13.0
 #ifdef ios13Later
 #define kStatusBarHeight [UIApplication sharedApplication].keyWindow.windowScene.statusBarManager.statusBarFrame.size.height
 #else
@@ -25,7 +25,7 @@
 
 #define kScreenWidth CGRectGetWidth([UIScreen mainScreen].bounds)
 #define kScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
-#define kNavigationHeight kStatusBarHeight + 44.0
+#define kNavigationHeight (kStatusBarHeight + 44.0)
 #define kTabBarHeight (kStatusBarHeight == 20.0 ? 49.0:83.0)
 
 #endif /* SimpleWriteDeifne_h */

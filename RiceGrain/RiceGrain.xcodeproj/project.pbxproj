@@ -7,9 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015BEC41249A3299003F5833 /* MyAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015BEC3F249A3299003F5833 /* MyAddressController.m */; };
+		015BEC42249A3299003F5833 /* MyAddressController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015BEC40249A3299003F5833 /* MyAddressController.xib */; };
+		015BEC46249A3847003F5833 /* MyAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015BEC44249A3847003F5833 /* MyAddressCell.m */; };
+		015BEC47249A3847003F5833 /* MyAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015BEC45249A3847003F5833 /* MyAddressCell.xib */; };
+		015BEC4D249AEF54003F5833 /* MyAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 015BEC4C249AEF54003F5833 /* MyAddressModel.m */; };
+		0163176E249C3E020032EF44 /* AddNewAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0163176C249C3E020032EF44 /* AddNewAddressController.m */; };
+		0163176F249C3E020032EF44 /* AddNewAddressController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0163176D249C3E020032EF44 /* AddNewAddressController.xib */; };
+		01631774249C51850032EF44 /* FeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01631772249C51850032EF44 /* FeedbackController.m */; };
+		01631775249C51850032EF44 /* FeedbackController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01631773249C51850032EF44 /* FeedbackController.xib */; };
+		0163177A249DAAB00032EF44 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01631778249DAAB00032EF44 /* LoginController.m */; };
+		0163177B249DAAB00032EF44 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01631779249DAAB00032EF44 /* LoginController.xib */; };
+		01631780249DB37E0032EF44 /* RegistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0163177E249DB37E0032EF44 /* RegistController.m */; };
+		01631781249DB37E0032EF44 /* RegistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0163177F249DB37E0032EF44 /* RegistController.xib */; };
 		0193D8C2249919F4004A4263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0193D8C0249919BB004A4263 /* Main.storyboard */; };
 		0193D8CC24992E34004A4263 /* TabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0193D8C924992E33004A4263 /* TabBarView.m */; };
 		0193D8CE2499D2D5004A4263 /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0193D8CD2499D2D5004A4263 /* TabBarView.xib */; };
+		0193D8D3249A0775004A4263 /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0193D8D1249A0775004A4263 /* MineTableViewCell.m */; };
+		0193D8D4249A0775004A4263 /* MineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0193D8D2249A0775004A4263 /* MineTableViewCell.xib */; };
 		01CAB93E24926AD400D2FC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01CAB93D24926AD400D2FC89 /* Assets.xcassets */; };
 		01CAB94F24926B1E00D2FC89 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CAB94C24926B1E00D2FC89 /* SceneDelegate.m */; };
 		01CAB95024926B1E00D2FC89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CAB94D24926B1E00D2FC89 /* AppDelegate.m */; };
@@ -34,15 +49,46 @@
 		01CAB9D72498979200D2FC89 /* MineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CAB9D52498979200D2FC89 /* MineController.xib */; };
 		01CAB9DB2498979F00D2FC89 /* OrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CAB9D92498979F00D2FC89 /* OrderController.m */; };
 		01CAB9DC2498979F00D2FC89 /* OrderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CAB9DA2498979F00D2FC89 /* OrderController.xib */; };
+		01F05116249F3B8C00879F68 /* BindPhoneNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F05114249F3B8C00879F68 /* BindPhoneNumberController.m */; };
+		01F05117249F3B8C00879F68 /* BindPhoneNumberController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F05115249F3B8C00879F68 /* BindPhoneNumberController.xib */; };
+		01F0511F249F750C00879F68 /* AccoundLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F0511D249F750C00879F68 /* AccoundLoginController.m */; };
+		01F05120249F750C00879F68 /* AccoundLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F0511E249F750C00879F68 /* AccoundLoginController.xib */; };
+		01F05124249F7E3500879F68 /* ForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F05122249F7E3500879F68 /* ForgetPasswordController.m */; };
+		01F05125249F7E3500879F68 /* ForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F05123249F7E3500879F68 /* ForgetPasswordController.xib */; };
+		01F05129249F833D00879F68 /* SetNewPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F05127249F833D00879F68 /* SetNewPasswordController.m */; };
+		01F0512A249F833D00879F68 /* SetNewPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F05128249F833D00879F68 /* SetNewPasswordController.xib */; };
 		F83370564113C502B5B5EC2A /* libPods-RiceGrain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0C763335636495401F501E /* libPods-RiceGrain.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		015BEC3E249A3299003F5833 /* MyAddressController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAddressController.h; sourceTree = "<group>"; };
+		015BEC3F249A3299003F5833 /* MyAddressController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAddressController.m; sourceTree = "<group>"; };
+		015BEC40249A3299003F5833 /* MyAddressController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAddressController.xib; sourceTree = "<group>"; };
+		015BEC43249A3847003F5833 /* MyAddressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAddressCell.h; sourceTree = "<group>"; };
+		015BEC44249A3847003F5833 /* MyAddressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAddressCell.m; sourceTree = "<group>"; };
+		015BEC45249A3847003F5833 /* MyAddressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAddressCell.xib; sourceTree = "<group>"; };
+		015BEC4B249AEF54003F5833 /* MyAddressModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAddressModel.h; sourceTree = "<group>"; };
+		015BEC4C249AEF54003F5833 /* MyAddressModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAddressModel.m; sourceTree = "<group>"; };
+		0163176B249C3E020032EF44 /* AddNewAddressController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNewAddressController.h; sourceTree = "<group>"; };
+		0163176C249C3E020032EF44 /* AddNewAddressController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNewAddressController.m; sourceTree = "<group>"; };
+		0163176D249C3E020032EF44 /* AddNewAddressController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewAddressController.xib; sourceTree = "<group>"; };
+		01631771249C51850032EF44 /* FeedbackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedbackController.h; sourceTree = "<group>"; };
+		01631772249C51850032EF44 /* FeedbackController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedbackController.m; sourceTree = "<group>"; };
+		01631773249C51850032EF44 /* FeedbackController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedbackController.xib; sourceTree = "<group>"; };
+		01631777249DAAB00032EF44 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		01631778249DAAB00032EF44 /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		01631779249DAAB00032EF44 /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		0163177D249DB37E0032EF44 /* RegistController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistController.h; sourceTree = "<group>"; };
+		0163177E249DB37E0032EF44 /* RegistController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistController.m; sourceTree = "<group>"; };
+		0163177F249DB37E0032EF44 /* RegistController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistController.xib; sourceTree = "<group>"; };
 		0193D8C0249919BB004A4263 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0193D8C924992E33004A4263 /* TabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarView.m; sourceTree = "<group>"; };
 		0193D8CA24992E33004A4263 /* TabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarView.h; sourceTree = "<group>"; };
 		0193D8CD2499D2D5004A4263 /* TabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
 		0193D8CF2499F250004A4263 /* ThirdPartService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdPartService.h; sourceTree = "<group>"; };
+		0193D8D0249A0775004A4263 /* MineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
+		0193D8D1249A0775004A4263 /* MineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
+		0193D8D2249A0775004A4263 /* MineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineTableViewCell.xib; sourceTree = "<group>"; };
 		01CAB92E24926AD300D2FC89 /* RiceGrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiceGrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01CAB93D24926AD400D2FC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01CAB94B24926B1E00D2FC89 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +135,18 @@
 		01CAB9D82498979F00D2FC89 /* OrderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderController.h; sourceTree = "<group>"; };
 		01CAB9D92498979F00D2FC89 /* OrderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderController.m; sourceTree = "<group>"; };
 		01CAB9DA2498979F00D2FC89 /* OrderController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderController.xib; sourceTree = "<group>"; };
+		01F05113249F3B8C00879F68 /* BindPhoneNumberController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindPhoneNumberController.h; sourceTree = "<group>"; };
+		01F05114249F3B8C00879F68 /* BindPhoneNumberController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindPhoneNumberController.m; sourceTree = "<group>"; };
+		01F05115249F3B8C00879F68 /* BindPhoneNumberController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BindPhoneNumberController.xib; sourceTree = "<group>"; };
+		01F0511C249F750C00879F68 /* AccoundLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccoundLoginController.h; sourceTree = "<group>"; };
+		01F0511D249F750C00879F68 /* AccoundLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccoundLoginController.m; sourceTree = "<group>"; };
+		01F0511E249F750C00879F68 /* AccoundLoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccoundLoginController.xib; sourceTree = "<group>"; };
+		01F05121249F7E3500879F68 /* ForgetPasswordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordController.h; sourceTree = "<group>"; };
+		01F05122249F7E3500879F68 /* ForgetPasswordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordController.m; sourceTree = "<group>"; };
+		01F05123249F7E3500879F68 /* ForgetPasswordController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordController.xib; sourceTree = "<group>"; };
+		01F05126249F833D00879F68 /* SetNewPasswordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetNewPasswordController.h; sourceTree = "<group>"; };
+		01F05127249F833D00879F68 /* SetNewPasswordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetNewPasswordController.m; sourceTree = "<group>"; };
+		01F05128249F833D00879F68 /* SetNewPasswordController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetNewPasswordController.xib; sourceTree = "<group>"; };
 		1C0C763335636495401F501E /* libPods-RiceGrain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RiceGrain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95970A122375234BA9E6F56D /* Pods-RiceGrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiceGrain.debug.xcconfig"; path = "Target Support Files/Pods-RiceGrain/Pods-RiceGrain.debug.xcconfig"; sourceTree = "<group>"; };
 		FC8CF6FA10E303E01C56C4EB /* Pods-RiceGrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiceGrain.release.xcconfig"; path = "Target Support Files/Pods-RiceGrain/Pods-RiceGrain.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +164,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		015BEC3D249A3285003F5833 /* MyAddress */ = {
+			isa = PBXGroup;
+			children = (
+				0163176A249B6B490032EF44 /* AddNewAddress */,
+				015BEC3E249A3299003F5833 /* MyAddressController.h */,
+				015BEC3F249A3299003F5833 /* MyAddressController.m */,
+				015BEC40249A3299003F5833 /* MyAddressController.xib */,
+				015BEC43249A3847003F5833 /* MyAddressCell.h */,
+				015BEC44249A3847003F5833 /* MyAddressCell.m */,
+				015BEC45249A3847003F5833 /* MyAddressCell.xib */,
+				015BEC4B249AEF54003F5833 /* MyAddressModel.h */,
+				015BEC4C249AEF54003F5833 /* MyAddressModel.m */,
+			);
+			path = MyAddress;
+			sourceTree = "<group>";
+		};
+		0163176A249B6B490032EF44 /* AddNewAddress */ = {
+			isa = PBXGroup;
+			children = (
+				0163176B249C3E020032EF44 /* AddNewAddressController.h */,
+				0163176C249C3E020032EF44 /* AddNewAddressController.m */,
+				0163176D249C3E020032EF44 /* AddNewAddressController.xib */,
+			);
+			path = AddNewAddress;
+			sourceTree = "<group>";
+		};
+		01631770249C516A0032EF44 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				01631771249C51850032EF44 /* FeedbackController.h */,
+				01631772249C51850032EF44 /* FeedbackController.m */,
+				01631773249C51850032EF44 /* FeedbackController.xib */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		01631776249DA42F0032EF44 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				01F0511A249F74DB00879F68 /* AccountLogin */,
+				0163177C249DB3660032EF44 /* Regist */,
+				01F05112249F3B7A00879F68 /* BindPhoneNumber */,
+				01631777249DAAB00032EF44 /* LoginController.h */,
+				01631778249DAAB00032EF44 /* LoginController.m */,
+				01631779249DAAB00032EF44 /* LoginController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0163177C249DB3660032EF44 /* Regist */ = {
+			isa = PBXGroup;
+			children = (
+				0163177D249DB37E0032EF44 /* RegistController.h */,
+				0163177E249DB37E0032EF44 /* RegistController.m */,
+				0163177F249DB37E0032EF44 /* RegistController.xib */,
+			);
+			path = Regist;
+			sourceTree = "<group>";
+		};
 		01CAB92524926AD300D2FC89 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +279,7 @@
 		01CAB95624926C5200D2FC89 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				01631776249DA42F0032EF44 /* Login */,
 				01CAB9C52498975000D2FC89 /* HomePage */,
 				01CAB9C62498975000D2FC89 /* Discover */,
 				01CAB9C72498975000D2FC89 /* Order */,
@@ -318,11 +436,50 @@
 		01CAB9C82498975000D2FC89 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				015BEC3D249A3285003F5833 /* MyAddress */,
+				01631770249C516A0032EF44 /* Feedback */,
 				01CAB9D32498979200D2FC89 /* MineController.h */,
 				01CAB9D42498979200D2FC89 /* MineController.m */,
 				01CAB9D52498979200D2FC89 /* MineController.xib */,
+				0193D8D0249A0775004A4263 /* MineTableViewCell.h */,
+				0193D8D1249A0775004A4263 /* MineTableViewCell.m */,
+				0193D8D2249A0775004A4263 /* MineTableViewCell.xib */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		01F05112249F3B7A00879F68 /* BindPhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				01F05113249F3B8C00879F68 /* BindPhoneNumberController.h */,
+				01F05114249F3B8C00879F68 /* BindPhoneNumberController.m */,
+				01F05115249F3B8C00879F68 /* BindPhoneNumberController.xib */,
+			);
+			path = BindPhoneNumber;
+			sourceTree = "<group>";
+		};
+		01F0511A249F74DB00879F68 /* AccountLogin */ = {
+			isa = PBXGroup;
+			children = (
+				01F0511B249F74DB00879F68 /* FrogetPassword */,
+				01F0511C249F750C00879F68 /* AccoundLoginController.h */,
+				01F0511D249F750C00879F68 /* AccoundLoginController.m */,
+				01F0511E249F750C00879F68 /* AccoundLoginController.xib */,
+			);
+			path = AccountLogin;
+			sourceTree = "<group>";
+		};
+		01F0511B249F74DB00879F68 /* FrogetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				01F05121249F7E3500879F68 /* ForgetPasswordController.h */,
+				01F05122249F7E3500879F68 /* ForgetPasswordController.m */,
+				01F05123249F7E3500879F68 /* ForgetPasswordController.xib */,
+				01F05126249F833D00879F68 /* SetNewPasswordController.h */,
+				01F05127249F833D00879F68 /* SetNewPasswordController.m */,
+				01F05128249F833D00879F68 /* SetNewPasswordController.xib */,
+			);
+			path = FrogetPassword;
 			sourceTree = "<group>";
 		};
 		3E7FE0A61359E1F0F10607ED /* Frameworks */ = {
@@ -401,14 +558,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0163176F249C3E020032EF44 /* AddNewAddressController.xib in Resources */,
 				0193D8C2249919F4004A4263 /* Main.storyboard in Resources */,
+				01F0512A249F833D00879F68 /* SetNewPasswordController.xib in Resources */,
 				01CAB9D72498979200D2FC89 /* MineController.xib in Resources */,
+				0193D8D4249A0775004A4263 /* MineTableViewCell.xib in Resources */,
 				01CAB9B224988F2F00D2FC89 /* WebViewController.xib in Resources */,
 				01CAB95424926C1500D2FC89 /* LaunchScreen.storyboard in Resources */,
 				01CAB93E24926AD400D2FC89 /* Assets.xcassets in Resources */,
+				01631781249DB37E0032EF44 /* RegistController.xib in Resources */,
 				01CAB9DC2498979F00D2FC89 /* OrderController.xib in Resources */,
 				0193D8CE2499D2D5004A4263 /* TabBarView.xib in Resources */,
 				01CAB9CD2498977000D2FC89 /* HomePageController.xib in Resources */,
+				015BEC42249A3299003F5833 /* MyAddressController.xib in Resources */,
+				01F05117249F3B8C00879F68 /* BindPhoneNumberController.xib in Resources */,
+				015BEC47249A3847003F5833 /* MyAddressCell.xib in Resources */,
+				01631775249C51850032EF44 /* FeedbackController.xib in Resources */,
+				01F05120249F750C00879F68 /* AccoundLoginController.xib in Resources */,
+				01F05125249F7E3500879F68 /* ForgetPasswordController.xib in Resources */,
+				0163177B249DAAB00032EF44 /* LoginController.xib in Resources */,
 				01CAB9D22498978100D2FC89 /* DiscoverController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,17 +630,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015BEC46249A3847003F5833 /* MyAddressCell.m in Sources */,
 				0193D8CC24992E34004A4263 /* TabBarView.m in Sources */,
 				01CAB98624926D1000D2FC89 /* NSString+Category.m in Sources */,
+				0193D8D3249A0775004A4263 /* MineTableViewCell.m in Sources */,
 				01CAB98924926D1000D2FC89 /* NSArray+Safe.m in Sources */,
+				01631780249DB37E0032EF44 /* RegistController.m in Sources */,
+				0163177A249DAAB00032EF44 /* LoginController.m in Sources */,
+				015BEC41249A3299003F5833 /* MyAddressController.m in Sources */,
+				01F05116249F3B8C00879F68 /* BindPhoneNumberController.m in Sources */,
+				0163176E249C3E020032EF44 /* AddNewAddressController.m in Sources */,
 				01CAB9B124988F2F00D2FC89 /* WebViewController.m in Sources */,
 				01CAB9D12498978100D2FC89 /* DiscoverController.m in Sources */,
+				015BEC4D249AEF54003F5833 /* MyAddressModel.m in Sources */,
 				01CAB95024926B1E00D2FC89 /* AppDelegate.m in Sources */,
+				01F05124249F7E3500879F68 /* ForgetPasswordController.m in Sources */,
 				01CAB98424926D1000D2FC89 /* UIAlertController+Category.m in Sources */,
+				01F05129249F833D00879F68 /* SetNewPasswordController.m in Sources */,
 				01CAB98524926D1000D2FC89 /* UIBarButtonItem+Category.m in Sources */,
 				01CAB95524926C1500D2FC89 /* main.m in Sources */,
+				01F0511F249F750C00879F68 /* AccoundLoginController.m in Sources */,
 				01CAB9D62498979200D2FC89 /* MineController.m in Sources */,
 				01CAB9CC2498977000D2FC89 /* HomePageController.m in Sources */,
+				01631774249C51850032EF44 /* FeedbackController.m in Sources */,
 				01CAB98824926D1000D2FC89 /* NSMutableArray+Safe.m in Sources */,
 				01CAB9B72498937D00D2FC89 /* BaseNavigationController.m in Sources */,
 				01CAB9DB2498979F00D2FC89 /* OrderController.m in Sources */,

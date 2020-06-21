@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAddressController">
+            <connections>
+                <outlet property="addressTableView" destination="n3C-q0-E9X" id="G2l-MB-LIS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WL7-04-Hsr">
+                    <rect key="frame" x="15" y="807" width="384" height="40"/>
+                    <color key="backgroundColor" red="0.98431372549019602" green="0.80000000000000004" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Rv9-go-z7a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="新增收货地址">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addNewAddressButtonClick" destination="-1" eventType="touchUpInside" id="UpM-zB-vvM"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n3C-q0-E9X">
+                    <rect key="frame" x="0.0" y="44" width="414" height="753"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="aN5-YG-kEm"/>
+                        <outlet property="delegate" destination="-1" id="g1z-Sg-IAd"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="n3C-q0-E9X" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="5ny-tC-A7i"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="WL7-04-Hsr" secondAttribute="bottom" constant="15" id="BBP-eJ-aK7"/>
+                <constraint firstItem="n3C-q0-E9X" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Irc-EM-bhb"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="WL7-04-Hsr" secondAttribute="trailing" constant="15" id="LQa-5a-Fa4"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="n3C-q0-E9X" secondAttribute="trailing" id="TWL-oT-hdr"/>
+                <constraint firstItem="WL7-04-Hsr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="kee-Vk-bOe"/>
+                <constraint firstItem="WL7-04-Hsr" firstAttribute="top" secondItem="n3C-q0-E9X" secondAttribute="bottom" constant="10" id="wxQ-XX-nu8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="110" y="104"/>
+        </view>
+    </objects>
+</document>

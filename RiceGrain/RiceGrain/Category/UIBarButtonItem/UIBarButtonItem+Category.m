@@ -27,7 +27,7 @@
 
 + (UIButton *)creatButtonWithTitle:(NSString *)title image:(NSString *)imageName imagePositoin:(ButtonImagePosition)position target:(id)target action:(SEL)action {
     
-    CGSize titleSize = [title boundingRectWithSize:CGSizeMake(70, 20) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16]} context:nil].size;
+    CGSize titleSize = [title boundingRectWithSize:CGSizeMake(70, 20) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} context:nil].size;
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 0, titleSize.width + 30, 30);
@@ -42,13 +42,13 @@
     if (title.length && imageName.length) {
         button.titleLabel.font = [UIFont systemFontOfSize:16];
         [button setTitle:title forState:UIControlStateNormal];
-        [button.widthAnchor constraintEqualToConstant:titleSize.width + 30].active = YES;
+        [button.widthAnchor constraintEqualToConstant:titleSize.width + 40].active = YES;
         [button setImage:ImageNamed(imageName) forState:UIControlStateNormal];
-        [button setTitleColor:HexColor(0x66665a) forState:UIControlStateNormal];
+        [button setTitleColor:HexColor(0x343434) forState:UIControlStateNormal];
     }else if (title.length) {
-        button.titleLabel.font = [UIFont systemFontOfSize:16];
+        button.titleLabel.font = [UIFont systemFontOfSize:14];
         [button setTitle:title forState:UIControlStateNormal];
-        [button setTitleColor:HexColor(0x66665a) forState:UIControlStateNormal];
+        [button setTitleColor:HexColor(0x343434) forState:UIControlStateNormal];
         [button.widthAnchor constraintEqualToConstant:titleSize.width + 30].active = YES;
         button.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
     }else {

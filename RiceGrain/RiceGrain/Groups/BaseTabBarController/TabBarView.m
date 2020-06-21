@@ -26,11 +26,11 @@
     [super awakeFromNib];
     
     self.layer.shadowColor = [UIColor blackColor].CGColor;
-    self.layer.shadowOffset = CGSizeMake(0, 0);
-    self.layer.shadowRadius = 5;
+    self.layer.shadowOffset = CGSizeMake(0, 1);
+    self.layer.shadowRadius = 7;
     self.layer.shadowOpacity = 0.2;
     self.layer.cornerRadius = 30;
-    self.frame = CGRectMake((kScreenWidth - 270)/2, (kScreenHeight - kNavigationHeight - kTabBarHeight - 22 - 60), 270, 60);
+    self.frame = CGRectMake((kScreenWidth - 270)/2, (kScreenHeight - kNavigationHeight - 22 - 60), 270, 60);
 }
 
 - (void)setSelectedIndex:(NSInteger)selectedIndex {
