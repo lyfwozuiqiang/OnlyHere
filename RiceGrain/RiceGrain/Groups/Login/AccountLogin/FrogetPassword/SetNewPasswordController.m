@@ -31,7 +31,7 @@
 }
 
 - (IBAction)passwordTextFieldEditingChanged {
-    if (self.passwordTextField.text.length > 5 && self.confirmPasswordTextField.text.length >5 && [self.passwordTextField.text isEqualToString:self.confirmPasswordTextField.text]) {
+    if (self.passwordTextField.text.length > 5 && self.confirmPasswordTextField.text.length > 5 && [self.passwordTextField.text isEqualToString:self.confirmPasswordTextField.text]) {
         [self changePassowordLoginButtonEnable:YES];
     }else {
         [self changePassowordLoginButtonEnable:NO];
@@ -39,7 +39,13 @@
 }
 
 - (IBAction)confirmChangePasswordButtonClick {
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    for (NSInteger i = 0; i < self.navigationController.viewControllers.count; i++) {
+        UIViewController *viewController = self.navigationController.viewControllers[i];
+        if ([viewController isKindOfClass:NSClassFromString(@"AccoundLoginController")]) {
+            [self.navigationController popToViewController:viewController animated:YES];
+            break;
+        }
+    }
 }
 
 

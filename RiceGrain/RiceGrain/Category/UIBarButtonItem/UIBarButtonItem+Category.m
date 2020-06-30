@@ -52,7 +52,7 @@
         [button.widthAnchor constraintEqualToConstant:titleSize.width + 30].active = YES;
         button.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
     }else {
-        [button.widthAnchor constraintEqualToConstant:40].active = YES;
+        [button.widthAnchor constraintEqualToConstant:42].active = YES;
         [button setImage:ImageNamed(imageName) forState:UIControlStateNormal];
     }
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];

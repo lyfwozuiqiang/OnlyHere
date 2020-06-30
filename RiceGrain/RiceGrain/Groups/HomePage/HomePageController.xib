@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomePageController">
             <connections>
+                <outlet property="homePageTableView" destination="Ifa-xg-6BR" id="gqT-JT-sJ5"/>
+                <outlet property="leftBarButtonItemView" destination="ZlY-iF-qhX" id="hLU-vj-pee"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +19,82 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ifa-xg-6BR">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="separatorColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TXt-xw-hbh"/>
+                        <outlet property="delegate" destination="-1" id="Wlc-NB-ftI"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Ifa-xg-6BR" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="0Ij-bo-6or"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ifa-xg-6BR" secondAttribute="trailing" id="4cI-oS-AyB"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Ifa-xg-6BR" secondAttribute="bottom" id="CZ6-OO-Cd7"/>
+                <constraint firstItem="Ifa-xg-6BR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="UgX-VB-od6"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="87" y="96"/>
         </view>
+        <view contentMode="scaleToFill" id="ZlY-iF-qhX">
+            <rect key="frame" x="0.0" y="0.0" width="129" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzf-p5-tTl">
+                    <rect key="frame" x="0.0" y="0.0" width="129" height="104"/>
+                    <connections>
+                        <action selector="leftBarButtonItemClick" destination="-1" eventType="touchUpInside" id="fqR-rU-3bi"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_p" translatesAutoresizingMaskIntoConstraints="NO" id="7M5-JU-yfF">
+                    <rect key="frame" x="0.0" y="45.5" width="13" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="PgE-ch-fSN"/>
+                        <constraint firstAttribute="width" constant="13" id="VTw-bY-7MA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="东方之门" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBs-5U-rdQ">
+                    <rect key="frame" x="21" y="44.5" width="90" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="90" id="9wp-oZ-0Hw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_more_gray" translatesAutoresizingMaskIntoConstraints="NO" id="lVd-Ag-f0X">
+                    <rect key="frame" x="116" y="45.5" width="13" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="28a-1h-h4f"/>
+                        <constraint firstAttribute="width" constant="13" id="scp-GN-CzC"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="GBs-5U-rdQ" firstAttribute="centerY" secondItem="ZlY-iF-qhX" secondAttribute="centerY" id="Ad0-6r-JPS"/>
+                <constraint firstAttribute="bottom" secondItem="nzf-p5-tTl" secondAttribute="bottom" id="CR0-xN-9eN"/>
+                <constraint firstItem="lVd-Ag-f0X" firstAttribute="leading" secondItem="GBs-5U-rdQ" secondAttribute="trailing" constant="5" id="N37-tG-TXQ"/>
+                <constraint firstAttribute="trailing" secondItem="nzf-p5-tTl" secondAttribute="trailing" id="PMy-ID-Fll"/>
+                <constraint firstItem="7M5-JU-yfF" firstAttribute="leading" secondItem="6Mq-Ro-ZGy" secondAttribute="leading" id="RGc-yp-vuZ"/>
+                <constraint firstItem="nzf-p5-tTl" firstAttribute="leading" secondItem="ZlY-iF-qhX" secondAttribute="leading" id="UaX-sI-CEa"/>
+                <constraint firstItem="6Mq-Ro-ZGy" firstAttribute="trailing" secondItem="lVd-Ag-f0X" secondAttribute="trailing" id="nNM-oX-tQ1"/>
+                <constraint firstItem="lVd-Ag-f0X" firstAttribute="centerY" secondItem="ZlY-iF-qhX" secondAttribute="centerY" id="qLT-p3-Ir5"/>
+                <constraint firstItem="nzf-p5-tTl" firstAttribute="top" secondItem="ZlY-iF-qhX" secondAttribute="top" id="vPA-Rb-wwJ"/>
+                <constraint firstItem="GBs-5U-rdQ" firstAttribute="leading" secondItem="7M5-JU-yfF" secondAttribute="trailing" constant="8" id="wtc-gu-1um"/>
+                <constraint firstItem="7M5-JU-yfF" firstAttribute="centerY" secondItem="ZlY-iF-qhX" secondAttribute="centerY" id="zUv-co-L8x"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="6Mq-Ro-ZGy"/>
+            <point key="canvasLocation" x="587.68115942028987" y="-169.41964285714286"/>
+        </view>
     </objects>
+    <resources>
+        <image name="list_more_gray" width="12" height="12"/>
+        <image name="nav_p" width="13" height="13"/>
+    </resources>
 </document>

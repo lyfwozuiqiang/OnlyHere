@@ -28,4 +28,6 @@
 #define kNavigationHeight (kStatusBarHeight + 44.0)
 #define kTabBarHeight (kStatusBarHeight == 20.0 ? 49.0:83.0)
 
+#define WeakSelf(type)  __weak typeof(type) weak##type = type; 
+
 #endif /* SimpleWriteDeifne_h */

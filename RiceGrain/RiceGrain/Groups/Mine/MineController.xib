@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MineController">
             <connections>
+                <outlet property="headPortraitButton" destination="uCz-Bf-ycl" id="VDh-nt-LfU"/>
                 <outlet property="headerView" destination="bm4-UF-E2t" id="woN-Hd-1fV"/>
                 <outlet property="mineTableView" destination="i3E-i0-LKb" id="152-Ug-Toe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -49,6 +50,9 @@
                         <constraint firstAttribute="width" constant="68" id="HE3-rf-eEQ"/>
                         <constraint firstAttribute="height" constant="68" id="Tb5-mD-fNY"/>
                     </constraints>
+                    <connections>
+                        <action selector="changeHeadPortraitButtonClick:" destination="-1" eventType="touchUpInside" id="p3R-cn-fzN"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="米粒儿" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FD-hU-DLv">
                     <rect key="frame" x="20" y="66.5" width="61.5" height="24"/>

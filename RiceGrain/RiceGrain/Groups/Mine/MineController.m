@@ -11,8 +11,15 @@
 #import "TabBarView.h"
 #import "MineTableViewCell.h"
 
-#import "MyAddressController.h"
+#import "SettingsController.h"
 #import "FeedbackController.h"
+#import "MyAddressController.h"
+#import "MyMessagesController.h"
+#import "MyCollectionController.h"
+#import "InviteFriendController.h"
+#import "RidersSettledController.h"
+#import "MerchantsSettledController.h"
+
 #import "BaseNavigationController.h"
 
 @interface MineController ()<UITableViewDataSource,UITableViewDelegate,MineTableViewCellDelegate>
@@ -20,9 +27,12 @@
 @property (strong, nonatomic) TabBarView *tabBarView;
 @property (weak, nonatomic) IBOutlet UITableView *mineTableView;
 @property (strong, nonatomic) IBOutlet UIView *headerView;
+@property (weak, nonatomic) IBOutlet UIButton *headPortraitButton;
 
 @property (strong, nonatomic) NSArray *titleListArray;
 @property (strong, nonatomic) NSArray *imageListArray;
+@property (strong, nonatomic) NSArray *messagesArray;
+
 @end
 
 @implementation MineController
@@ -60,17 +70,22 @@
         MyAddressController *myAddressVc = [MyAddressController new];
         [self.navigationController pushViewController:myAddressVc animated:YES];
     }else if ([title isEqualToString:@"我的收藏"]) {
-        
+        MyCollectionController *myCollectionVc = [MyCollectionController new];
+        [self.navigationController pushViewController:myCollectionVc animated:YES];
     }else if ([title isEqualToString:@"我的消息"]) {
-        
+        MyMessagesController *myMessagesVc = [MyMessagesController new];
+        [self.navigationController pushViewController:myMessagesVc animated:YES];
     }else if ([title isEqualToString:@"邀请好友"]) {
-        
+        InviteFriendController *nnviteFriendVc = [InviteFriendController new];
+        [self.navigationController pushViewController:nnviteFriendVc animated:YES];
     }else if ([title isEqualToString:@"商户合作"]) {
-        
+        MerchantsSettledController *merchantsSettledVc = [MerchantsSettledController new];
+        [self.navigationController pushViewController:merchantsSettledVc animated:YES];
     }else if ([title isEqualToString:@"服务协议"]) {
         
     }else if ([title isEqualToString:@"骑手入驻"]) {
-        
+        RidersSettledController *ridersSettledVc = [RidersSettledController new];
+        [self.navigationController pushViewController:ridersSettledVc animated:YES];
     }else if ([title isEqualToString:@"意见反馈"]) {
         FeedbackController *feedbackVc = [FeedbackController new];
         [self.navigationController pushViewController:feedbackVc animated:YES];
@@ -79,7 +94,8 @@
 
 //MARK:- Action
 - (void)settingItemClick {
-    NSLog(@"settingItemClick");
+    SettingsController *settingsVc = [SettingsController new];
+    [self.navigationController pushViewController:settingsVc animated:YES];
 }
 
 - (void)customerServiceItemClick {
@@ -87,6 +103,9 @@
     BaseNavigationController *navigationController = [[BaseNavigationController alloc] initWithRootViewController:loginVc];
     navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:navigationController animated:YES completion:nil];
+}
+- (IBAction)changeHeadPortraitButtonClick:(UIButton *)sender {
+    
 }
 
 //MARK:- Method
@@ -122,5 +141,12 @@
         _imageListArray = @[@[@"me_location",@"me_collection"],@[@"me_message",@"me_invite"],@[@"me_merchant",@"me_agreement"],@[@"me_rider",@"me_feedback"]];
     }
     return _imageListArray;
+}
+
+- (NSArray *)messagesArray {
+    if (!_messagesArray) {
+        _messagesArray = [NSArray arrayWithObjects:@[@(0),@(0)],@[@(999),@(0)],@[@(0),@(0)],@[@(0),@(0)], nil];
+    }
+    return _messagesArray;
 }
 @end

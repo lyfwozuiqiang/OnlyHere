@@ -75,8 +75,25 @@
                             <constraint firstAttribute="height" constant="60" id="YmG-kF-6DU"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGG-oV-iTG">
+                        <rect key="frame" x="139.5" y="36" width="15" height="15"/>
+                        <color key="backgroundColor" red="1" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="9Qs-ax-sYr"/>
+                            <constraint firstAttribute="height" constant="15" id="AfX-KI-Cr1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="7.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="EGG-oV-iTG" firstAttribute="top" secondItem="meT-gJ-W81" secondAttribute="top" constant="-2" id="10G-Iu-Ma4"/>
                     <constraint firstItem="JoC-h9-C30" firstAttribute="centerX" secondItem="Jc9-iO-eWY" secondAttribute="centerX" id="2VY-hp-VTJ"/>
                     <constraint firstItem="wvA-3z-1Ro" firstAttribute="leading" secondItem="Dtd-kc-pl7" secondAttribute="leading" constant="10" id="5Fk-GP-GnT"/>
                     <constraint firstItem="wvA-3z-1Ro" firstAttribute="trailing" secondItem="Dtd-kc-pl7" secondAttribute="trailing" constant="-10" id="CyA-zG-hsE"/>
@@ -89,6 +106,7 @@
                     <constraint firstItem="meT-gJ-W81" firstAttribute="centerX" secondItem="Dtd-kc-pl7" secondAttribute="centerX" id="ebe-lL-ybV"/>
                     <constraint firstItem="5YI-m4-keG" firstAttribute="leading" secondItem="Jc9-iO-eWY" secondAttribute="leading" constant="10" id="ehy-Yq-SxW"/>
                     <constraint firstItem="Dtd-kc-pl7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-80" id="h5q-Us-hrA"/>
+                    <constraint firstItem="EGG-oV-iTG" firstAttribute="leading" secondItem="meT-gJ-W81" secondAttribute="trailing" constant="-10" id="ot2-3W-wL7"/>
                     <constraint firstItem="Dtd-kc-pl7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qrF-Eu-0AK"/>
                     <constraint firstItem="5YI-m4-keG" firstAttribute="trailing" secondItem="Jc9-iO-eWY" secondAttribute="trailing" constant="-10" id="v0d-DJ-N22"/>
                 </constraints>
