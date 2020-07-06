@@ -12,8 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UINavigationController (Category)
 
-- (void)changeNavigationControllerTitleWithColor:(UIColor *)titleColor;
+- (void)changeNavigationControllerTitleColor:(UIColor *)titleColor;
 - (void)changeNavigationControllerBackgroundImageWithColor:(UIColor *)imageColor;
+- (void)changeNavigationControllerLeftBarButtonItem:(UIImage *)image;
 
 @end
 

@@ -32,6 +32,20 @@
 		0163177B249DAAB00032EF44 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01631779249DAAB00032EF44 /* LoginController.xib */; };
 		01631780249DB37E0032EF44 /* RegistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0163177E249DB37E0032EF44 /* RegistController.m */; };
 		01631781249DB37E0032EF44 /* RegistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0163177F249DB37E0032EF44 /* RegistController.xib */; };
+		016C3B0B24B0678E00D96FEF /* OrderDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 016C3B0924B0678E00D96FEF /* OrderDetailController.m */; };
+		016C3B0C24B0678E00D96FEF /* OrderDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016C3B0A24B0678E00D96FEF /* OrderDetailController.xib */; };
+		016C3B1124B07CED00D96FEF /* OrderCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 016C3B0F24B07CED00D96FEF /* OrderCommentController.m */; };
+		016C3B1224B07CED00D96FEF /* OrderCommentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016C3B1024B07CED00D96FEF /* OrderCommentController.xib */; };
+		016C3B1B24B1C2AE00D96FEF /* OrderStoreNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016C3B1924B1C2AE00D96FEF /* OrderStoreNameCell.m */; };
+		016C3B1C24B1C2AE00D96FEF /* OrderStoreNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016C3B1A24B1C2AE00D96FEF /* OrderStoreNameCell.xib */; };
+		016C3B2024B1D62A00D96FEF /* OrderPurchaseGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016C3B1E24B1D62A00D96FEF /* OrderPurchaseGoodsCell.m */; };
+		016C3B2124B1D62A00D96FEF /* OrderPurchaseGoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016C3B1F24B1D62A00D96FEF /* OrderPurchaseGoodsCell.xib */; };
+		016C3B2524B1D83000D96FEF /* OrderPaymentInfomationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016C3B2324B1D83000D96FEF /* OrderPaymentInfomationCell.m */; };
+		016C3B2624B1D83000D96FEF /* OrderPaymentInfomationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016C3B2424B1D83000D96FEF /* OrderPaymentInfomationCell.xib */; };
+		016C3B2A24B21FC200D96FEF /* OrderItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016C3B2824B21FC200D96FEF /* OrderItemCell.m */; };
+		016C3B2B24B21FC200D96FEF /* OrderItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016C3B2924B21FC200D96FEF /* OrderItemCell.xib */; };
+		016C3B2E24B2D01000D96FEF /* OrderSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 016C3B2D24B2D01000D96FEF /* OrderSectionHeaderView.m */; };
+		016C3B3024B2D38100D96FEF /* OrderSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016C3B2F24B2D38000D96FEF /* OrderSectionHeaderView.xib */; };
 		016CF00B24A21DA500BD553A /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016CF00824A21DA500BD553A /* MineTableViewCell.m */; };
 		016CF00C24A21DA500BD553A /* MineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016CF00924A21DA500BD553A /* MineTableViewCell.xib */; };
 		016CF01124A21FAA00BD553A /* AccountSafetyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 016CF00F24A21FAA00BD553A /* AccountSafetyController.m */; };
@@ -46,9 +60,46 @@
 		016CF02824A2334500BD553A /* MerchantsSettledController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016CF02624A2334500BD553A /* MerchantsSettledController.xib */; };
 		016CF03224A2558C00BD553A /* RidersSettledController.m in Sources */ = {isa = PBXBuildFile; fileRef = 016CF03024A2558C00BD553A /* RidersSettledController.m */; };
 		016CF03324A2558C00BD553A /* RidersSettledController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016CF03124A2558C00BD553A /* RidersSettledController.xib */; };
+		016F7E9024AE0E1A006C1CD9 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 016F7E8524AE0E1A006C1CD9 /* SearchController.m */; };
+		016F7E9124AE0E1A006C1CD9 /* SearchItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016F7E8624AE0E1A006C1CD9 /* SearchItemCell.xib */; };
+		016F7E9224AE0E1A006C1CD9 /* SearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016F7E8A24AE0E1A006C1CD9 /* SearchController.xib */; };
+		016F7E9324AE0E1A006C1CD9 /* SearchRecordFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 016F7E8C24AE0E1A006C1CD9 /* SearchRecordFlowLayout.m */; };
+		016F7E9424AE0E1A006C1CD9 /* SearchReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016F7E8D24AE0E1A006C1CD9 /* SearchReusableView.xib */; };
+		016F7E9524AE0E1A006C1CD9 /* SearchItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016F7E8E24AE0E1A006C1CD9 /* SearchItemCell.m */; };
+		016F7E9624AE0E1A006C1CD9 /* SearchReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 016F7E8F24AE0E1A006C1CD9 /* SearchReusableView.m */; };
+		016F7E9A24AE0E9E006C1CD9 /* SearchStoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016F7E9824AE0E9E006C1CD9 /* SearchStoreCell.m */; };
+		016F7E9B24AE0E9E006C1CD9 /* SearchStoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016F7E9924AE0E9E006C1CD9 /* SearchStoreCell.xib */; };
+		016F7E9F24AE0EB0006C1CD9 /* SearchGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016F7E9D24AE0EB0006C1CD9 /* SearchGoodsCell.m */; };
+		016F7EA024AE0EB0006C1CD9 /* SearchGoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016F7E9E24AE0EB0006C1CD9 /* SearchGoodsCell.xib */; };
+		016F7EA324AE2A1C006C1CD9 /* SearchResultHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 016F7EA224AE2A1C006C1CD9 /* SearchResultHeaderView.m */; };
+		016F7EA524AE2AF6006C1CD9 /* SearchResultHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016F7EA424AE2AF6006C1CD9 /* SearchResultHeaderView.xib */; };
+		016F7EAA24B024F4006C1CD9 /* OrderStateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016F7EA824B024F4006C1CD9 /* OrderStateCell.m */; };
+		016F7EAB24B024F4006C1CD9 /* OrderStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016F7EA924B024F4006C1CD9 /* OrderStateCell.xib */; };
+		016F7EAF24B0250C006C1CD9 /* OrderStateDeliverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016F7EAD24B0250C006C1CD9 /* OrderStateDeliverCell.m */; };
+		016F7EB024B0250C006C1CD9 /* OrderStateDeliverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016F7EAE24B0250C006C1CD9 /* OrderStateDeliverCell.xib */; };
 		0193D8C2249919F4004A4263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0193D8C0249919BB004A4263 /* Main.storyboard */; };
 		0193D8CC24992E34004A4263 /* TabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0193D8C924992E33004A4263 /* TabBarView.m */; };
 		0193D8CE2499D2D5004A4263 /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0193D8CD2499D2D5004A4263 /* TabBarView.xib */; };
+		01A223DD24AB5D5B0017D816 /* MerchantIntroductionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A223DB24AB5D5B0017D816 /* MerchantIntroductionController.m */; };
+		01A223DE24AB5D5B0017D816 /* MerchantIntroductionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A223DC24AB5D5B0017D816 /* MerchantIntroductionController.xib */; };
+		01A223E224AB6E0E0017D816 /* MerchantIntroductionAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A223E024AB6E0E0017D816 /* MerchantIntroductionAddressCell.m */; };
+		01A223E324AB6E0E0017D816 /* MerchantIntroductionAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A223E124AB6E0E0017D816 /* MerchantIntroductionAddressCell.xib */; };
+		01A223E724AB8D310017D816 /* MerchantInfomationoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A223E524AB8D310017D816 /* MerchantInfomationoCell.m */; };
+		01A223E824AB8D310017D816 /* MerchantInfomationoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A223E624AB8D310017D816 /* MerchantInfomationoCell.xib */; };
+		01A223EC24AB92130017D816 /* MerchantLicenseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A223EA24AB92130017D816 /* MerchantLicenseCell.m */; };
+		01A223ED24AB92130017D816 /* MerchantLicenseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A223EB24AB92130017D816 /* MerchantLicenseCell.xib */; };
+		01A223F224AB94D50017D816 /* MerchantCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A223F024AB94D50017D816 /* MerchantCommentController.m */; };
+		01A223F324AB94D50017D816 /* MerchantCommentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A223F124AB94D50017D816 /* MerchantCommentController.xib */; };
+		01A223F724AC13650017D816 /* MerchantCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A223F524AC13650017D816 /* MerchantCommentCell.m */; };
+		01A223F824AC13650017D816 /* MerchantCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A223F624AC13650017D816 /* MerchantCommentCell.xib */; };
+		01A223FD24AC8A760017D816 /* ShoppingCartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A223FB24AC8A760017D816 /* ShoppingCartController.m */; };
+		01A223FE24AC8A760017D816 /* ShoppingCartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A223FC24AC8A760017D816 /* ShoppingCartController.xib */; };
+		01A2240224ACABB10017D816 /* ShopNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A2240024ACABB10017D816 /* ShopNameCell.m */; };
+		01A2240324ACABB10017D816 /* ShopNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A2240124ACABB10017D816 /* ShopNameCell.xib */; };
+		01A2240724ACB1980017D816 /* ShoppingCartListGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A2240524ACB1980017D816 /* ShoppingCartListGoodsCell.m */; };
+		01A2240824ACB1980017D816 /* ShoppingCartListGoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A2240624ACB1980017D816 /* ShoppingCartListGoodsCell.xib */; };
+		01A2240C24ACBDB20017D816 /* ShoppingCartAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A2240A24ACBDB20017D816 /* ShoppingCartAccountCell.m */; };
+		01A2240D24ACBDB20017D816 /* ShoppingCartAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A2240B24ACBDB20017D816 /* ShoppingCartAccountCell.xib */; };
 		01C104CE24AA0DFE00708B34 /* MerchantLeftImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C104CC24AA0DFE00708B34 /* MerchantLeftImageCell.m */; };
 		01C104CF24AA0DFE00708B34 /* MerchantLeftImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01C104CD24AA0DFE00708B34 /* MerchantLeftImageCell.xib */; };
 		01C104D324AA0E1900708B34 /* MerchantRightImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C104D124AA0E1900708B34 /* MerchantRightImageCell.m */; };
@@ -159,6 +210,27 @@
 		0163177D249DB37E0032EF44 /* RegistController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistController.h; sourceTree = "<group>"; };
 		0163177E249DB37E0032EF44 /* RegistController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistController.m; sourceTree = "<group>"; };
 		0163177F249DB37E0032EF44 /* RegistController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistController.xib; sourceTree = "<group>"; };
+		016C3B0824B0678E00D96FEF /* OrderDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderDetailController.h; sourceTree = "<group>"; };
+		016C3B0924B0678E00D96FEF /* OrderDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderDetailController.m; sourceTree = "<group>"; };
+		016C3B0A24B0678E00D96FEF /* OrderDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailController.xib; sourceTree = "<group>"; };
+		016C3B0E24B07CED00D96FEF /* OrderCommentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderCommentController.h; sourceTree = "<group>"; };
+		016C3B0F24B07CED00D96FEF /* OrderCommentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderCommentController.m; sourceTree = "<group>"; };
+		016C3B1024B07CED00D96FEF /* OrderCommentController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCommentController.xib; sourceTree = "<group>"; };
+		016C3B1824B1C2AE00D96FEF /* OrderStoreNameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderStoreNameCell.h; sourceTree = "<group>"; };
+		016C3B1924B1C2AE00D96FEF /* OrderStoreNameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderStoreNameCell.m; sourceTree = "<group>"; };
+		016C3B1A24B1C2AE00D96FEF /* OrderStoreNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderStoreNameCell.xib; sourceTree = "<group>"; };
+		016C3B1D24B1D62A00D96FEF /* OrderPurchaseGoodsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderPurchaseGoodsCell.h; sourceTree = "<group>"; };
+		016C3B1E24B1D62A00D96FEF /* OrderPurchaseGoodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderPurchaseGoodsCell.m; sourceTree = "<group>"; };
+		016C3B1F24B1D62A00D96FEF /* OrderPurchaseGoodsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderPurchaseGoodsCell.xib; sourceTree = "<group>"; };
+		016C3B2224B1D83000D96FEF /* OrderPaymentInfomationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderPaymentInfomationCell.h; sourceTree = "<group>"; };
+		016C3B2324B1D83000D96FEF /* OrderPaymentInfomationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderPaymentInfomationCell.m; sourceTree = "<group>"; };
+		016C3B2424B1D83000D96FEF /* OrderPaymentInfomationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderPaymentInfomationCell.xib; sourceTree = "<group>"; };
+		016C3B2724B21FC200D96FEF /* OrderItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderItemCell.h; sourceTree = "<group>"; };
+		016C3B2824B21FC200D96FEF /* OrderItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderItemCell.m; sourceTree = "<group>"; };
+		016C3B2924B21FC200D96FEF /* OrderItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderItemCell.xib; sourceTree = "<group>"; };
+		016C3B2C24B2D01000D96FEF /* OrderSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderSectionHeaderView.h; sourceTree = "<group>"; };
+		016C3B2D24B2D01000D96FEF /* OrderSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderSectionHeaderView.m; sourceTree = "<group>"; };
+		016C3B2F24B2D38000D96FEF /* OrderSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderSectionHeaderView.xib; sourceTree = "<group>"; };
 		016CF00824A21DA500BD553A /* MineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
 		016CF00924A21DA500BD553A /* MineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineTableViewCell.xib; sourceTree = "<group>"; };
 		016CF00A24A21DA500BD553A /* MineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
@@ -180,11 +252,69 @@
 		016CF02F24A2558C00BD553A /* RidersSettledController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RidersSettledController.h; sourceTree = "<group>"; };
 		016CF03024A2558C00BD553A /* RidersSettledController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RidersSettledController.m; sourceTree = "<group>"; };
 		016CF03124A2558C00BD553A /* RidersSettledController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RidersSettledController.xib; sourceTree = "<group>"; };
+		016F7E8324ADF90A006C1CD9 /* CategoryDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryDefine.h; sourceTree = "<group>"; };
+		016F7E8524AE0E1A006C1CD9 /* SearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchController.m; sourceTree = "<group>"; };
+		016F7E8624AE0E1A006C1CD9 /* SearchItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchItemCell.xib; sourceTree = "<group>"; };
+		016F7E8724AE0E1A006C1CD9 /* SearchItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchItemCell.h; sourceTree = "<group>"; };
+		016F7E8824AE0E1A006C1CD9 /* SearchReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchReusableView.h; sourceTree = "<group>"; };
+		016F7E8924AE0E1A006C1CD9 /* SearchRecordFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchRecordFlowLayout.h; sourceTree = "<group>"; };
+		016F7E8A24AE0E1A006C1CD9 /* SearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchController.xib; sourceTree = "<group>"; };
+		016F7E8B24AE0E1A006C1CD9 /* SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
+		016F7E8C24AE0E1A006C1CD9 /* SearchRecordFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchRecordFlowLayout.m; sourceTree = "<group>"; };
+		016F7E8D24AE0E1A006C1CD9 /* SearchReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchReusableView.xib; sourceTree = "<group>"; };
+		016F7E8E24AE0E1A006C1CD9 /* SearchItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchItemCell.m; sourceTree = "<group>"; };
+		016F7E8F24AE0E1A006C1CD9 /* SearchReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchReusableView.m; sourceTree = "<group>"; };
+		016F7E9724AE0E9E006C1CD9 /* SearchStoreCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchStoreCell.h; sourceTree = "<group>"; };
+		016F7E9824AE0E9E006C1CD9 /* SearchStoreCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchStoreCell.m; sourceTree = "<group>"; };
+		016F7E9924AE0E9E006C1CD9 /* SearchStoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchStoreCell.xib; sourceTree = "<group>"; };
+		016F7E9C24AE0EB0006C1CD9 /* SearchGoodsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchGoodsCell.h; sourceTree = "<group>"; };
+		016F7E9D24AE0EB0006C1CD9 /* SearchGoodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchGoodsCell.m; sourceTree = "<group>"; };
+		016F7E9E24AE0EB0006C1CD9 /* SearchGoodsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchGoodsCell.xib; sourceTree = "<group>"; };
+		016F7EA124AE2A1C006C1CD9 /* SearchResultHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultHeaderView.h; sourceTree = "<group>"; };
+		016F7EA224AE2A1C006C1CD9 /* SearchResultHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultHeaderView.m; sourceTree = "<group>"; };
+		016F7EA424AE2AF6006C1CD9 /* SearchResultHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultHeaderView.xib; sourceTree = "<group>"; };
+		016F7EA624AF29BB006C1CD9 /* OrderTypeDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderTypeDefine.h; sourceTree = "<group>"; };
+		016F7EA724B024F4006C1CD9 /* OrderStateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderStateCell.h; sourceTree = "<group>"; };
+		016F7EA824B024F4006C1CD9 /* OrderStateCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderStateCell.m; sourceTree = "<group>"; };
+		016F7EA924B024F4006C1CD9 /* OrderStateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderStateCell.xib; sourceTree = "<group>"; };
+		016F7EAC24B0250C006C1CD9 /* OrderStateDeliverCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderStateDeliverCell.h; sourceTree = "<group>"; };
+		016F7EAD24B0250C006C1CD9 /* OrderStateDeliverCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderStateDeliverCell.m; sourceTree = "<group>"; };
+		016F7EAE24B0250C006C1CD9 /* OrderStateDeliverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderStateDeliverCell.xib; sourceTree = "<group>"; };
 		0193D8C0249919BB004A4263 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0193D8C924992E33004A4263 /* TabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarView.m; sourceTree = "<group>"; };
 		0193D8CA24992E33004A4263 /* TabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarView.h; sourceTree = "<group>"; };
 		0193D8CD2499D2D5004A4263 /* TabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
 		0193D8CF2499F250004A4263 /* ThirdPartService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdPartService.h; sourceTree = "<group>"; };
+		01A223DA24AB5D5B0017D816 /* MerchantIntroductionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerchantIntroductionController.h; sourceTree = "<group>"; };
+		01A223DB24AB5D5B0017D816 /* MerchantIntroductionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MerchantIntroductionController.m; sourceTree = "<group>"; };
+		01A223DC24AB5D5B0017D816 /* MerchantIntroductionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantIntroductionController.xib; sourceTree = "<group>"; };
+		01A223DF24AB6E0E0017D816 /* MerchantIntroductionAddressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerchantIntroductionAddressCell.h; sourceTree = "<group>"; };
+		01A223E024AB6E0E0017D816 /* MerchantIntroductionAddressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MerchantIntroductionAddressCell.m; sourceTree = "<group>"; };
+		01A223E124AB6E0E0017D816 /* MerchantIntroductionAddressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantIntroductionAddressCell.xib; sourceTree = "<group>"; };
+		01A223E424AB8D310017D816 /* MerchantInfomationoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerchantInfomationoCell.h; sourceTree = "<group>"; };
+		01A223E524AB8D310017D816 /* MerchantInfomationoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MerchantInfomationoCell.m; sourceTree = "<group>"; };
+		01A223E624AB8D310017D816 /* MerchantInfomationoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantInfomationoCell.xib; sourceTree = "<group>"; };
+		01A223E924AB92130017D816 /* MerchantLicenseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerchantLicenseCell.h; sourceTree = "<group>"; };
+		01A223EA24AB92130017D816 /* MerchantLicenseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MerchantLicenseCell.m; sourceTree = "<group>"; };
+		01A223EB24AB92130017D816 /* MerchantLicenseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantLicenseCell.xib; sourceTree = "<group>"; };
+		01A223EF24AB94D50017D816 /* MerchantCommentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerchantCommentController.h; sourceTree = "<group>"; };
+		01A223F024AB94D50017D816 /* MerchantCommentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MerchantCommentController.m; sourceTree = "<group>"; };
+		01A223F124AB94D50017D816 /* MerchantCommentController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantCommentController.xib; sourceTree = "<group>"; };
+		01A223F424AC13650017D816 /* MerchantCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerchantCommentCell.h; sourceTree = "<group>"; };
+		01A223F524AC13650017D816 /* MerchantCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MerchantCommentCell.m; sourceTree = "<group>"; };
+		01A223F624AC13650017D816 /* MerchantCommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantCommentCell.xib; sourceTree = "<group>"; };
+		01A223FA24AC8A760017D816 /* ShoppingCartController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartController.h; sourceTree = "<group>"; };
+		01A223FB24AC8A760017D816 /* ShoppingCartController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartController.m; sourceTree = "<group>"; };
+		01A223FC24AC8A760017D816 /* ShoppingCartController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartController.xib; sourceTree = "<group>"; };
+		01A223FF24ACABB10017D816 /* ShopNameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopNameCell.h; sourceTree = "<group>"; };
+		01A2240024ACABB10017D816 /* ShopNameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopNameCell.m; sourceTree = "<group>"; };
+		01A2240124ACABB10017D816 /* ShopNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopNameCell.xib; sourceTree = "<group>"; };
+		01A2240424ACB1980017D816 /* ShoppingCartListGoodsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartListGoodsCell.h; sourceTree = "<group>"; };
+		01A2240524ACB1980017D816 /* ShoppingCartListGoodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartListGoodsCell.m; sourceTree = "<group>"; };
+		01A2240624ACB1980017D816 /* ShoppingCartListGoodsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartListGoodsCell.xib; sourceTree = "<group>"; };
+		01A2240924ACBDB20017D816 /* ShoppingCartAccountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartAccountCell.h; sourceTree = "<group>"; };
+		01A2240A24ACBDB20017D816 /* ShoppingCartAccountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartAccountCell.m; sourceTree = "<group>"; };
+		01A2240B24ACBDB20017D816 /* ShoppingCartAccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartAccountCell.xib; sourceTree = "<group>"; };
 		01C104CB24AA0DFE00708B34 /* MerchantLeftImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerchantLeftImageCell.h; sourceTree = "<group>"; };
 		01C104CC24AA0DFE00708B34 /* MerchantLeftImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MerchantLeftImageCell.m; sourceTree = "<group>"; };
 		01C104CD24AA0DFE00708B34 /* MerchantLeftImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantLeftImageCell.xib; sourceTree = "<group>"; };
@@ -314,6 +444,8 @@
 		0123C0E024A5BDCF003F7DF9 /* MerchantHomePage */ = {
 			isa = PBXGroup;
 			children = (
+				01A223EE24AB94BE0017D816 /* MerchantComment */,
+				01A223D924AB5D3E0017D816 /* MerchantIntroduction */,
 				01C104E424AADE2400708B34 /* OrderSettlement */,
 				0123C0E124A5BE02003F7DF9 /* MerchantHomePageController.h */,
 				0123C0E224A5BE02003F7DF9 /* MerchantHomePageController.m */,
@@ -421,6 +553,41 @@
 			path = Regist;
 			sourceTree = "<group>";
 		};
+		016C3B0724B0677A00D96FEF /* OrderDetail */ = {
+			isa = PBXGroup;
+			children = (
+				016C3B0824B0678E00D96FEF /* OrderDetailController.h */,
+				016C3B0924B0678E00D96FEF /* OrderDetailController.m */,
+				016C3B0A24B0678E00D96FEF /* OrderDetailController.xib */,
+				016C3B1824B1C2AE00D96FEF /* OrderStoreNameCell.h */,
+				016C3B1924B1C2AE00D96FEF /* OrderStoreNameCell.m */,
+				016C3B1A24B1C2AE00D96FEF /* OrderStoreNameCell.xib */,
+				016C3B1D24B1D62A00D96FEF /* OrderPurchaseGoodsCell.h */,
+				016C3B1E24B1D62A00D96FEF /* OrderPurchaseGoodsCell.m */,
+				016C3B1F24B1D62A00D96FEF /* OrderPurchaseGoodsCell.xib */,
+				016C3B2224B1D83000D96FEF /* OrderPaymentInfomationCell.h */,
+				016C3B2324B1D83000D96FEF /* OrderPaymentInfomationCell.m */,
+				016C3B2424B1D83000D96FEF /* OrderPaymentInfomationCell.xib */,
+				016C3B2724B21FC200D96FEF /* OrderItemCell.h */,
+				016C3B2824B21FC200D96FEF /* OrderItemCell.m */,
+				016C3B2924B21FC200D96FEF /* OrderItemCell.xib */,
+				016C3B2C24B2D01000D96FEF /* OrderSectionHeaderView.h */,
+				016C3B2D24B2D01000D96FEF /* OrderSectionHeaderView.m */,
+				016C3B2F24B2D38000D96FEF /* OrderSectionHeaderView.xib */,
+			);
+			path = OrderDetail;
+			sourceTree = "<group>";
+		};
+		016C3B0D24B07CD600D96FEF /* OrderComment */ = {
+			isa = PBXGroup;
+			children = (
+				016C3B0E24B07CED00D96FEF /* OrderCommentController.h */,
+				016C3B0F24B07CED00D96FEF /* OrderCommentController.m */,
+				016C3B1024B07CED00D96FEF /* OrderCommentController.xib */,
+			);
+			path = OrderComment;
+			sourceTree = "<group>";
+		};
 		016CF00D24A21F9A00BD553A /* AccountSafety */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,6 +632,84 @@
 				016CF03124A2558C00BD553A /* RidersSettledController.xib */,
 			);
 			path = RidersSettled;
+			sourceTree = "<group>";
+		};
+		016F7E8424AE0E1A006C1CD9 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				016F7E8B24AE0E1A006C1CD9 /* SearchController.h */,
+				016F7E8524AE0E1A006C1CD9 /* SearchController.m */,
+				016F7E8A24AE0E1A006C1CD9 /* SearchController.xib */,
+				016F7E8724AE0E1A006C1CD9 /* SearchItemCell.h */,
+				016F7E8E24AE0E1A006C1CD9 /* SearchItemCell.m */,
+				016F7E8624AE0E1A006C1CD9 /* SearchItemCell.xib */,
+				016F7E8824AE0E1A006C1CD9 /* SearchReusableView.h */,
+				016F7E8F24AE0E1A006C1CD9 /* SearchReusableView.m */,
+				016F7E8D24AE0E1A006C1CD9 /* SearchReusableView.xib */,
+				016F7E8924AE0E1A006C1CD9 /* SearchRecordFlowLayout.h */,
+				016F7E8C24AE0E1A006C1CD9 /* SearchRecordFlowLayout.m */,
+				016F7E9724AE0E9E006C1CD9 /* SearchStoreCell.h */,
+				016F7E9824AE0E9E006C1CD9 /* SearchStoreCell.m */,
+				016F7E9924AE0E9E006C1CD9 /* SearchStoreCell.xib */,
+				016F7E9C24AE0EB0006C1CD9 /* SearchGoodsCell.h */,
+				016F7E9D24AE0EB0006C1CD9 /* SearchGoodsCell.m */,
+				016F7E9E24AE0EB0006C1CD9 /* SearchGoodsCell.xib */,
+				016F7EA124AE2A1C006C1CD9 /* SearchResultHeaderView.h */,
+				016F7EA224AE2A1C006C1CD9 /* SearchResultHeaderView.m */,
+				016F7EA424AE2AF6006C1CD9 /* SearchResultHeaderView.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		01A223D924AB5D3E0017D816 /* MerchantIntroduction */ = {
+			isa = PBXGroup;
+			children = (
+				01A223DA24AB5D5B0017D816 /* MerchantIntroductionController.h */,
+				01A223DB24AB5D5B0017D816 /* MerchantIntroductionController.m */,
+				01A223DC24AB5D5B0017D816 /* MerchantIntroductionController.xib */,
+				01A223DF24AB6E0E0017D816 /* MerchantIntroductionAddressCell.h */,
+				01A223E024AB6E0E0017D816 /* MerchantIntroductionAddressCell.m */,
+				01A223E124AB6E0E0017D816 /* MerchantIntroductionAddressCell.xib */,
+				01A223E424AB8D310017D816 /* MerchantInfomationoCell.h */,
+				01A223E524AB8D310017D816 /* MerchantInfomationoCell.m */,
+				01A223E624AB8D310017D816 /* MerchantInfomationoCell.xib */,
+				01A223E924AB92130017D816 /* MerchantLicenseCell.h */,
+				01A223EA24AB92130017D816 /* MerchantLicenseCell.m */,
+				01A223EB24AB92130017D816 /* MerchantLicenseCell.xib */,
+			);
+			path = MerchantIntroduction;
+			sourceTree = "<group>";
+		};
+		01A223EE24AB94BE0017D816 /* MerchantComment */ = {
+			isa = PBXGroup;
+			children = (
+				01A223EF24AB94D50017D816 /* MerchantCommentController.h */,
+				01A223F024AB94D50017D816 /* MerchantCommentController.m */,
+				01A223F124AB94D50017D816 /* MerchantCommentController.xib */,
+				01A223F424AC13650017D816 /* MerchantCommentCell.h */,
+				01A223F524AC13650017D816 /* MerchantCommentCell.m */,
+				01A223F624AC13650017D816 /* MerchantCommentCell.xib */,
+			);
+			path = MerchantComment;
+			sourceTree = "<group>";
+		};
+		01A223F924AC8A610017D816 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				01A223FA24AC8A760017D816 /* ShoppingCartController.h */,
+				01A223FB24AC8A760017D816 /* ShoppingCartController.m */,
+				01A223FC24AC8A760017D816 /* ShoppingCartController.xib */,
+				01A223FF24ACABB10017D816 /* ShopNameCell.h */,
+				01A2240024ACABB10017D816 /* ShopNameCell.m */,
+				01A2240124ACABB10017D816 /* ShopNameCell.xib */,
+				01A2240424ACB1980017D816 /* ShoppingCartListGoodsCell.h */,
+				01A2240524ACB1980017D816 /* ShoppingCartListGoodsCell.m */,
+				01A2240624ACB1980017D816 /* ShoppingCartListGoodsCell.xib */,
+				01A2240924ACBDB20017D816 /* ShoppingCartAccountCell.h */,
+				01A2240A24ACBDB20017D816 /* ShoppingCartAccountCell.m */,
+				01A2240B24ACBDB20017D816 /* ShoppingCartAccountCell.xib */,
+			);
+			path = ShoppingCart;
 			sourceTree = "<group>";
 		};
 		01C104E424AADE2400708B34 /* OrderSettlement */ = {
@@ -642,6 +887,7 @@
 				01CAB98E24926EA700D2FC89 /* SimpleWriteDeifne.h */,
 				0193D8CF2499F250004A4263 /* ThirdPartService.h */,
 				0123C0FB24A5FE38003F7DF9 /* ManagerDefine.h */,
+				016F7E8324ADF90A006C1CD9 /* CategoryDefine.h */,
 			);
 			path = PrefixHeaderDefine;
 			sourceTree = "<group>";
@@ -680,6 +926,8 @@
 		01CAB9C52498975000D2FC89 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				016F7E8424AE0E1A006C1CD9 /* Search */,
+				01A223F924AC8A610017D816 /* ShoppingCart */,
 				0123C0E024A5BDCF003F7DF9 /* MerchantHomePage */,
 				01CAB9C92498977000D2FC89 /* HomePageController.h */,
 				01CAB9CA2498977000D2FC89 /* HomePageController.m */,
@@ -707,9 +955,18 @@
 		01CAB9C72498975000D2FC89 /* Order */ = {
 			isa = PBXGroup;
 			children = (
+				016C3B0724B0677A00D96FEF /* OrderDetail */,
+				016C3B0D24B07CD600D96FEF /* OrderComment */,
+				016F7EA624AF29BB006C1CD9 /* OrderTypeDefine.h */,
 				01CAB9D82498979F00D2FC89 /* OrderController.h */,
 				01CAB9D92498979F00D2FC89 /* OrderController.m */,
 				01CAB9DA2498979F00D2FC89 /* OrderController.xib */,
+				016F7EA724B024F4006C1CD9 /* OrderStateCell.h */,
+				016F7EA824B024F4006C1CD9 /* OrderStateCell.m */,
+				016F7EA924B024F4006C1CD9 /* OrderStateCell.xib */,
+				016F7EAC24B0250C006C1CD9 /* OrderStateDeliverCell.h */,
+				016F7EAD24B0250C006C1CD9 /* OrderStateDeliverCell.m */,
+				016F7EAE24B0250C006C1CD9 /* OrderStateDeliverCell.xib */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -884,17 +1141,26 @@
 			files = (
 				01C104F324AB25C100708B34 /* OrderShopCell.xib in Resources */,
 				0163176F249C3E020032EF44 /* AddNewAddressController.xib in Resources */,
+				01A223F324AB94D50017D816 /* MerchantCommentController.xib in Resources */,
 				0193D8C2249919F4004A4263 /* Main.storyboard in Resources */,
+				016F7EA524AE2AF6006C1CD9 /* SearchResultHeaderView.xib in Resources */,
 				01C104EE24AAE4D300708B34 /* OrderAddressCell.xib in Resources */,
 				01F0512A249F833D00879F68 /* SetNewPasswordController.xib in Resources */,
+				016C3B1C24B1C2AE00D96FEF /* OrderStoreNameCell.xib in Resources */,
 				01C1050724AB460A00708B34 /* OrderPaymentTypeCell.xib in Resources */,
+				016F7E9224AE0E1A006C1CD9 /* SearchController.xib in Resources */,
+				01A223F824AC13650017D816 /* MerchantCommentCell.xib in Resources */,
+				016C3B1224B07CED00D96FEF /* OrderCommentController.xib in Resources */,
 				0123C0EA24A5D6BF003F7DF9 /* ShoppingCartView.xib in Resources */,
 				01C104CF24AA0DFE00708B34 /* MerchantLeftImageCell.xib in Resources */,
 				01CAB9D72498979200D2FC89 /* MineController.xib in Resources */,
 				01CAB9B224988F2F00D2FC89 /* WebViewController.xib in Resources */,
+				016C3B2124B1D62A00D96FEF /* OrderPurchaseGoodsCell.xib in Resources */,
 				01CAB95424926C1500D2FC89 /* LaunchScreen.storyboard in Resources */,
+				01A2240D24ACBDB20017D816 /* ShoppingCartAccountCell.xib in Resources */,
 				016CF00C24A21DA500BD553A /* MineTableViewCell.xib in Resources */,
 				0123C0FA24A5FD37003F7DF9 /* ShoppingCartGoodsCell.xib in Resources */,
+				016F7E9424AE0E1A006C1CD9 /* SearchReusableView.xib in Resources */,
 				01C104E324AA43CA00708B34 /* MerchantSectionTitleHeaderView.xib in Resources */,
 				0123C0CA24A2FC3C003F7DF9 /* MerchantsTableViewCell.xib in Resources */,
 				016CF02824A2334500BD553A /* MerchantsSettledController.xib in Resources */,
@@ -902,33 +1168,49 @@
 				01CAB93E24926AD400D2FC89 /* Assets.xcassets in Resources */,
 				016CF01C24A2234000BD553A /* PhoneNumberChangeController.xib in Resources */,
 				01C1050224AB349A00708B34 /* OrderRemarksCell.xib in Resources */,
+				016F7EB024B0250C006C1CD9 /* OrderStateDeliverCell.xib in Resources */,
 				01631781249DB37E0032EF44 /* RegistController.xib in Resources */,
 				01C104D924AA1A0B00708B34 /* MerchantPromptMessageCell.xib in Resources */,
 				01F0514624A0EDB900879F68 /* MyMessagesCell.xib in Resources */,
 				01CAB9DC2498979F00D2FC89 /* OrderController.xib in Resources */,
 				016CF01724A220DC00BD553A /* IdentifierVerifyController.xib in Resources */,
+				01A223ED24AB92130017D816 /* MerchantLicenseCell.xib in Resources */,
 				01C104DE24AA3D0D00708B34 /* MerchantGoodsListCell.xib in Resources */,
 				01C104FD24AB2C6300708B34 /* OrderAccountsCell.xib in Resources */,
+				016F7EA024AE0EB0006C1CD9 /* SearchGoodsCell.xib in Resources */,
 				01F0514124A0E97000879F68 /* MyMessagesController.xib in Resources */,
 				01F0513B24A0E81600879F68 /* SettingsController.xib in Resources */,
+				016F7E9124AE0E1A006C1CD9 /* SearchItemCell.xib in Resources */,
 				0193D8CE2499D2D5004A4263 /* TabBarView.xib in Resources */,
 				01CAB9CD2498977000D2FC89 /* HomePageController.xib in Resources */,
 				015BEC42249A3299003F5833 /* MyAddressController.xib in Resources */,
+				016C3B2B24B21FC200D96FEF /* OrderItemCell.xib in Resources */,
 				01F05117249F3B8C00879F68 /* BindPhoneNumberController.xib in Resources */,
 				015BEC47249A3847003F5833 /* MyAddressCell.xib in Resources */,
 				01C104E924AADE4300708B34 /* OrderSettlementController.xib in Resources */,
 				01C104D424AA0E1900708B34 /* MerchantRightImageCell.xib in Resources */,
 				016CF01224A21FAA00BD553A /* AccountSafetyController.xib in Resources */,
+				016C3B2624B1D83000D96FEF /* OrderPaymentInfomationCell.xib in Resources */,
 				01631775249C51850032EF44 /* FeedbackController.xib in Resources */,
 				016CF02224A22DE000BD553A /* InviteFriendController.xib in Resources */,
+				01A223E824AB8D310017D816 /* MerchantInfomationoCell.xib in Resources */,
+				016F7E9B24AE0E9E006C1CD9 /* SearchStoreCell.xib in Resources */,
 				0123C0DF24A5A0B1003F7DF9 /* HomePageHeaderView.xib in Resources */,
+				01A223DE24AB5D5B0017D816 /* MerchantIntroductionController.xib in Resources */,
 				0123C0E524A5BE02003F7DF9 /* MerchantHomePageController.xib in Resources */,
+				016C3B0C24B0678E00D96FEF /* OrderDetailController.xib in Resources */,
+				01A223E324AB6E0E0017D816 /* MerchantIntroductionAddressCell.xib in Resources */,
+				016F7EAB24B024F4006C1CD9 /* OrderStateCell.xib in Resources */,
 				01C104F824AB288D00708B34 /* OrderGoodsCell.xib in Resources */,
 				01F05120249F750C00879F68 /* AccoundLoginController.xib in Resources */,
 				01F0513024A0349700879F68 /* MyCollectionController.xib in Resources */,
 				01F05125249F7E3500879F68 /* ForgetPasswordController.xib in Resources */,
+				01A223FE24AC8A760017D816 /* ShoppingCartController.xib in Resources */,
+				016C3B3024B2D38100D96FEF /* OrderSectionHeaderView.xib in Resources */,
+				01A2240324ACABB10017D816 /* ShopNameCell.xib in Resources */,
 				0163177B249DAAB00032EF44 /* LoginController.xib in Resources */,
 				01CAB9D22498978100D2FC89 /* DiscoverController.xib in Resources */,
+				01A2240824ACB1980017D816 /* ShoppingCartListGoodsCell.xib in Resources */,
 				016CF03324A2558C00BD553A /* RidersSettledController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -986,51 +1268,76 @@
 				0193D8CC24992E34004A4263 /* TabBarView.m in Sources */,
 				01CAB98624926D1000D2FC89 /* NSString+Category.m in Sources */,
 				01CAB98924926D1000D2FC89 /* NSArray+Safe.m in Sources */,
+				016F7EAA24B024F4006C1CD9 /* OrderStateCell.m in Sources */,
+				01A2240224ACABB10017D816 /* ShopNameCell.m in Sources */,
 				01631780249DB37E0032EF44 /* RegistController.m in Sources */,
 				0163177A249DAAB00032EF44 /* LoginController.m in Sources */,
 				01C104D824AA1A0B00708B34 /* MerchantPromptMessageCell.m in Sources */,
+				016C3B2024B1D62A00D96FEF /* OrderPurchaseGoodsCell.m in Sources */,
 				015BEC41249A3299003F5833 /* MyAddressController.m in Sources */,
+				016F7E9524AE0E1A006C1CD9 /* SearchItemCell.m in Sources */,
 				01C104F724AB288D00708B34 /* OrderGoodsCell.m in Sources */,
 				01C104F224AB25C100708B34 /* OrderShopCell.m in Sources */,
+				01A223E224AB6E0E0017D816 /* MerchantIntroductionAddressCell.m in Sources */,
 				01C104FC24AB2C6300708B34 /* OrderAccountsCell.m in Sources */,
+				016C3B1124B07CED00D96FEF /* OrderCommentController.m in Sources */,
 				01F05116249F3B8C00879F68 /* BindPhoneNumberController.m in Sources */,
 				0163176E249C3E020032EF44 /* AddNewAddressController.m in Sources */,
 				01C1050624AB460A00708B34 /* OrderPaymentTypeCell.m in Sources */,
+				016F7E9624AE0E1A006C1CD9 /* SearchReusableView.m in Sources */,
 				016CF01B24A2234000BD553A /* PhoneNumberChangeController.m in Sources */,
 				01C104D324AA0E1900708B34 /* MerchantRightImageCell.m in Sources */,
 				016CF03224A2558C00BD553A /* RidersSettledController.m in Sources */,
 				016CF00B24A21DA500BD553A /* MineTableViewCell.m in Sources */,
+				01A223FD24AC8A760017D816 /* ShoppingCartController.m in Sources */,
 				01CAB9B124988F2F00D2FC89 /* WebViewController.m in Sources */,
 				0123C0F524A5FBBA003F7DF9 /* ShoppingCartListModel.m in Sources */,
+				016F7E9024AE0E1A006C1CD9 /* SearchController.m in Sources */,
 				01CAB9D12498978100D2FC89 /* DiscoverController.m in Sources */,
+				016F7EA324AE2A1C006C1CD9 /* SearchResultHeaderView.m in Sources */,
 				015BEC4D249AEF54003F5833 /* MyAddressModel.m in Sources */,
 				0123C0F924A5FD37003F7DF9 /* ShoppingCartGoodsCell.m in Sources */,
 				01CAB95024926B1E00D2FC89 /* AppDelegate.m in Sources */,
 				01C104DD24AA3D0D00708B34 /* MerchantGoodsListCell.m in Sources */,
 				01F05124249F7E3500879F68 /* ForgetPasswordController.m in Sources */,
 				01CAB98424926D1000D2FC89 /* UIAlertController+Category.m in Sources */,
+				01A223F224AB94D50017D816 /* MerchantCommentController.m in Sources */,
+				016F7EAF24B0250C006C1CD9 /* OrderStateDeliverCell.m in Sources */,
+				016C3B0B24B0678E00D96FEF /* OrderDetailController.m in Sources */,
 				01F05129249F833D00879F68 /* SetNewPasswordController.m in Sources */,
 				01C104E124AA43BB00708B34 /* MerchantSectionTitleHeaderView.m in Sources */,
 				01CAB98524926D1000D2FC89 /* UIBarButtonItem+Category.m in Sources */,
 				01CAB95524926C1500D2FC89 /* main.m in Sources */,
 				01F0514524A0EDB900879F68 /* MyMessagesCell.m in Sources */,
 				01F0511F249F750C00879F68 /* AccoundLoginController.m in Sources */,
+				016F7E9324AE0E1A006C1CD9 /* SearchRecordFlowLayout.m in Sources */,
 				0123C0E424A5BE02003F7DF9 /* MerchantHomePageController.m in Sources */,
 				01CAB9D62498979200D2FC89 /* MineController.m in Sources */,
 				01C1050124AB349A00708B34 /* OrderRemarksCell.m in Sources */,
+				01A2240724ACB1980017D816 /* ShoppingCartListGoodsCell.m in Sources */,
+				01A223EC24AB92130017D816 /* MerchantLicenseCell.m in Sources */,
 				01C104E824AADE4300708B34 /* OrderSettlementController.m in Sources */,
+				016C3B2524B1D83000D96FEF /* OrderPaymentInfomationCell.m in Sources */,
 				016CF01624A220DC00BD553A /* IdentifierVerifyController.m in Sources */,
 				01F0514024A0E97000879F68 /* MyMessagesController.m in Sources */,
 				0123C0F224A5FB29003F7DF9 /* ShoppingCartListManager.m in Sources */,
+				01A223DD24AB5D5B0017D816 /* MerchantIntroductionController.m in Sources */,
 				01C104ED24AAE4D300708B34 /* OrderAddressCell.m in Sources */,
 				01F0513A24A0E81600879F68 /* SettingsController.m in Sources */,
+				01A223E724AB8D310017D816 /* MerchantInfomationoCell.m in Sources */,
+				016F7E9F24AE0EB0006C1CD9 /* SearchGoodsCell.m in Sources */,
 				01CAB9CC2498977000D2FC89 /* HomePageController.m in Sources */,
+				01A2240C24ACBDB20017D816 /* ShoppingCartAccountCell.m in Sources */,
+				016C3B2A24B21FC200D96FEF /* OrderItemCell.m in Sources */,
 				0123C0C924A2FC3C003F7DF9 /* MerchantsTableViewCell.m in Sources */,
 				0123C0DD24A5A07D003F7DF9 /* HomePageHeaderView.m in Sources */,
 				01631774249C51850032EF44 /* FeedbackController.m in Sources */,
+				016C3B2E24B2D01000D96FEF /* OrderSectionHeaderView.m in Sources */,
 				016CF02124A22DE000BD553A /* InviteFriendController.m in Sources */,
+				016C3B1B24B1C2AE00D96FEF /* OrderStoreNameCell.m in Sources */,
 				01CAB98824926D1000D2FC89 /* NSMutableArray+Safe.m in Sources */,
 				01CAB9B72498937D00D2FC89 /* BaseNavigationController.m in Sources */,
+				016F7E9A24AE0E9E006C1CD9 /* SearchStoreCell.m in Sources */,
 				01CAB9DB2498979F00D2FC89 /* OrderController.m in Sources */,
 				016CF01124A21FAA00BD553A /* AccountSafetyController.m in Sources */,
 				01C104CE24AA0DFE00708B34 /* MerchantLeftImageCell.m in Sources */,
@@ -1038,6 +1345,7 @@
 				01CAB98724926D1000D2FC89 /* UINavigationController+Category.m in Sources */,
 				01F0512F24A0349700879F68 /* MyCollectionController.m in Sources */,
 				01CAB94F24926B1E00D2FC89 /* SceneDelegate.m in Sources */,
+				01A223F724AC13650017D816 /* MerchantCommentCell.m in Sources */,
 				016CF02724A2334500BD553A /* MerchantsSettledController.m in Sources */,
 				01CAB98324926D1000D2FC89 /* UIColor+Category.m in Sources */,
 				01F0513424A0360C00879F68 /* MyCollectionCell.m in Sources */,

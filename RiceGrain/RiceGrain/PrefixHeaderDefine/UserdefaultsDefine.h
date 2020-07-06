@@ -9,8 +9,8 @@
 #ifndef UserdefaultsDefine_h
 #define UserdefaultsDefine_h
 
-#define kIsAgreeUserAgreement @"isAgreeUserAgreement"
-
 #define UserDefaults [NSUserDefaults standardUserDefaults]
+
+#define SearchHistoryRecord @"searchHistoryRecord"
 
 #endif /* UserdefaultsDefine_h */

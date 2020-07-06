@@ -253,18 +253,27 @@
                                     <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="商家" image="add_ic_store"/>
+                                    <connections>
+                                        <action selector="merchantIntroductionButtonClick" destination="-1" eventType="touchUpInside" id="pY6-Bf-kMs"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibn-eM-qHS">
                                     <rect key="frame" x="0.0" y="50" width="105" height="45"/>
                                     <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="评价" image="add_ic_evaluate"/>
+                                    <connections>
+                                        <action selector="merchantCommentButtonClick" destination="-1" eventType="touchUpInside" id="jqo-Ow-2l6"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3V-In-Yp9">
                                     <rect key="frame" x="0.0" y="95" width="105" height="45"/>
                                     <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="菜单" image="add_ic_menu"/>
+                                    <connections>
+                                        <action selector="merchantMenuButtonClick" destination="-1" eventType="touchUpInside" id="RQS-ag-VCn"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -345,17 +354,27 @@
                     <color key="textColor" red="1" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3oq-kn-Uff">
+                    <rect key="frame" x="0.0" y="133.5" width="364" height="0.5"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="AbQ-4c-b69"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="VbK-Ks-OLc" firstAttribute="bottom" secondItem="3oq-kn-Uff" secondAttribute="bottom" id="41v-al-GiV"/>
                 <constraint firstItem="HJF-rL-6sH" firstAttribute="centerX" secondItem="MhM-ok-GPb" secondAttribute="centerX" id="7GZ-Kj-rSY"/>
                 <constraint firstItem="N84-ha-hbZ" firstAttribute="centerX" secondItem="MhM-ok-GPb" secondAttribute="centerX" id="HEr-A8-fiQ"/>
                 <constraint firstItem="N84-ha-hbZ" firstAttribute="top" secondItem="HJF-rL-6sH" secondAttribute="bottom" constant="14" id="Pn6-db-x4f"/>
+                <constraint firstItem="3oq-kn-Uff" firstAttribute="leading" secondItem="MhM-ok-GPb" secondAttribute="leading" id="bvc-ng-zjV"/>
+                <constraint firstAttribute="trailing" secondItem="3oq-kn-Uff" secondAttribute="trailing" id="f0L-SZ-4qg"/>
                 <constraint firstItem="HJF-rL-6sH" firstAttribute="top" secondItem="MhM-ok-GPb" secondAttribute="top" constant="15" id="hE5-2b-yrl"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="VbK-Ks-OLc"/>
-            <point key="canvasLocation" x="1439" y="-161"/>
+            <point key="canvasLocation" x="1437.68115942029" y="-161.38392857142856"/>
         </view>
     </objects>
     <resources>

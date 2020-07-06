@@ -85,7 +85,7 @@
                             <constraint firstAttribute="height" constant="25" id="B2e-vp-blS"/>
                             <constraint firstAttribute="width" constant="25" id="H8A-FM-3mC"/>
                         </constraints>
-                        <state key="normal" image="btn_stepp_plus"/>
+                        <state key="normal" image="btn_stepp_reduce"/>
                     </button>
                 </subviews>
                 <constraints>
@@ -106,5 +106,6 @@
     </objects>
     <resources>
         <image name="btn_stepp_plus" width="20" height="20"/>
+        <image name="btn_stepp_reduce" width="20" height="20"/>
     </resources>
 </document>

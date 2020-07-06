@@ -9,6 +9,8 @@
 #import "MerchantHomePageController.h"
 
 #import "OrderSettlementController.h"
+#import "MerchantIntroductionController.h"
+#import "MerchantCommentController.h"
 
 #import "ShoppingCartView.h"
 #import "MerchantGoodsListCell.h"
@@ -50,6 +52,12 @@
     [super viewWillAppear:animated];
     
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 //MARK:- UITableViewDataSource
@@ -148,6 +156,22 @@
 - (IBAction)orderSettlementButtonClick {
     OrderSettlementController *orderSettlementVc = [OrderSettlementController new];
     [self.navigationController pushViewController:orderSettlementVc animated:YES];
+}
+
+- (IBAction)merchantIntroductionButtonClick {
+    [self.moreInfoView removeFromSuperview];
+    MerchantIntroductionController *merchantIntroductionVc = [MerchantIntroductionController new];
+    [self.navigationController pushViewController:merchantIntroductionVc animated:YES];
+}
+
+- (IBAction)merchantCommentButtonClick {
+    [self.moreInfoView removeFromSuperview];
+    MerchantCommentController *merchantCommentVc = [MerchantCommentController new];
+    [self.navigationController pushViewController:merchantCommentVc animated:YES];
+}
+
+- (IBAction)merchantMenuButtonClick {
+    [self.moreInfoView removeFromSuperview];
 }
 
 //MARK:- Method

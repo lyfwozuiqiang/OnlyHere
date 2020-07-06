@@ -38,12 +38,6 @@
     [self.orderSettlementTableView registerNib:[UINib nibWithNibName:@"OrderPaymentTypeCell" bundle:nil] forCellReuseIdentifier:@"OrderPaymentTypeCell"];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-}
-
 //MARK:- UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 4;

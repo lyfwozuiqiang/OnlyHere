@@ -36,7 +36,6 @@
 
 //MARK:- rewrite push function
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    
     if (self.viewControllers.count > 0) {
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"nav_back" imagePositon:PositionLeft target:self action:@selector(leftBarButtonItemClick)];
     }
@@ -45,7 +44,6 @@
 
 //MARK:- UINavigationControllerDelegate
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    
     if (self.viewControllers.count == 1) {
         self.interactivePopGestureRecognizer.enabled = NO;
     }else {

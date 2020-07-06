@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MerchantIntroductionController">
+            <connections>
+                <outlet property="merchantIntroductionTableView" destination="jcf-wv-08d" id="6MZ-6J-YX6"/>
+                <outlet property="merchantTableViewHeaderView" destination="vRq-K7-AzF" id="nKu-SC-yDN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jcf-wv-08d">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rJW-Tl-sEr"/>
+                        <outlet property="delegate" destination="-1" id="MBf-n8-gRr"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="jcf-wv-08d" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="3HL-iT-bpr"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="jcf-wv-08d" secondAttribute="bottom" id="KvC-5a-GzJ"/>
+                <constraint firstItem="jcf-wv-08d" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="iWv-id-rDK"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="jcf-wv-08d" secondAttribute="trailing" id="rr6-Ru-DRG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="131"/>
+        </view>
+        <view contentMode="scaleToFill" id="vRq-K7-AzF">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kjT-Me-7MS">
+                    <rect key="frame" x="161" y="15" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="aF1-3k-aIK"/>
+                        <constraint firstAttribute="height" constant="60" id="hCT-pj-s1f"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 PM 开始营业" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neE-uD-49K">
+                    <rect key="frame" x="142" y="87" width="98" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="neE-uD-49K" firstAttribute="centerX" secondItem="vRq-K7-AzF" secondAttribute="centerX" id="6zF-zX-Hax"/>
+                <constraint firstItem="kjT-Me-7MS" firstAttribute="top" secondItem="vRq-K7-AzF" secondAttribute="top" constant="15" id="gZ3-2H-Omi"/>
+                <constraint firstItem="neE-uD-49K" firstAttribute="top" secondItem="kjT-Me-7MS" secondAttribute="bottom" constant="12" id="iwh-gh-98S"/>
+                <constraint firstItem="kjT-Me-7MS" firstAttribute="centerX" secondItem="vRq-K7-AzF" secondAttribute="centerX" id="rSD-sJ-bOg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Qwj-Ly-PqL"/>
+            <point key="canvasLocation" x="797.10144927536237" y="-105.80357142857143"/>
+        </view>
+    </objects>
+</document>

@@ -8,7 +8,10 @@
 
 #import "HomePageController.h"
 
+#import "ShoppingCartController.h"
 #import "MerchantHomePageController.h"
+#import "SearchController.h"
+#import "BaseNavigationController.h"
 
 #import "HomePageHeaderView.h"
 #import "MerchantsTableViewCell.h"
@@ -89,7 +92,8 @@
 }
 
 - (void)shooppingCartBarButtonItemClick {
-    NSLog(@"shooppingCartBarButtonItemClick");
+    ShoppingCartController *shoppingCartVc = [ShoppingCartController new];
+    [self.navigationController pushViewController:shoppingCartVc animated:YES];
 }
 
 - (void)qrcodeBarButtonItemClick {
@@ -97,7 +101,10 @@
 }
 
 - (void)titleViewClick {
-    NSLog(@"titleViewClick");
+    SearchController *searchVc = [SearchController new];
+    BaseNavigationController *navi = [[BaseNavigationController alloc] initWithRootViewController:searchVc];
+    navi.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:navi animated:NO completion:nil];
 }
 //MARK:- Method
 - (void)addRightBarButtonItems {

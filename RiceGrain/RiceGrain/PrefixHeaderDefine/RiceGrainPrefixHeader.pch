@@ -16,11 +16,8 @@
 #import "SimpleWriteDeifne.h"
 #import "UserdefaultsDefine.h"
 #import "NotificationDefine.h"
-
 #import "ThirdPartService.h"
-
-#import "UIColor+Category.h"
-#import "UIBarButtonItem+Category.h"
+#import "CategoryDefine.h"
 
 #import "LoginController.h"
 
