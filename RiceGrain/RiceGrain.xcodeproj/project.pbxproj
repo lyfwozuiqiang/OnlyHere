@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0106A1EC24B61E0A00557EA6 /* OrderCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0106A1EB24B61E0A00557EA6 /* OrderCommentHeaderView.m */; };
+		0106A1EE24B61E2000557EA6 /* OrderCommentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0106A1ED24B61E2000557EA6 /* OrderCommentHeaderView.xib */; };
+		0106A1F224B621F500557EA6 /* OrderCommentGoosEvaluationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0106A1F024B621F500557EA6 /* OrderCommentGoosEvaluationCell.m */; };
+		0106A1F324B621F500557EA6 /* OrderCommentGoosEvaluationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0106A1F124B621F500557EA6 /* OrderCommentGoosEvaluationCell.xib */; };
 		0123C0C924A2FC3C003F7DF9 /* MerchantsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0123C0C724A2FC3C003F7DF9 /* MerchantsTableViewCell.m */; };
 		0123C0CA24A2FC3C003F7DF9 /* MerchantsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0123C0C824A2FC3C003F7DF9 /* MerchantsTableViewCell.xib */; };
 		0123C0DD24A5A07D003F7DF9 /* HomePageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0123C0DC24A5A07D003F7DF9 /* HomePageHeaderView.m */; };
@@ -19,6 +23,8 @@
 		0123C0F524A5FBBA003F7DF9 /* ShoppingCartListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0123C0F424A5FBBA003F7DF9 /* ShoppingCartListModel.m */; };
 		0123C0F924A5FD37003F7DF9 /* ShoppingCartGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0123C0F724A5FD37003F7DF9 /* ShoppingCartGoodsCell.m */; };
 		0123C0FA24A5FD37003F7DF9 /* ShoppingCartGoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0123C0F824A5FD37003F7DF9 /* ShoppingCartGoodsCell.xib */; };
+		013F92BC24B5AD9D004217DD /* OrderCommentImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 013F92BA24B5AD9D004217DD /* OrderCommentImageCell.m */; };
+		013F92BD24B5AD9D004217DD /* OrderCommentImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013F92BB24B5AD9D004217DD /* OrderCommentImageCell.xib */; };
 		015BEC41249A3299003F5833 /* MyAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015BEC3F249A3299003F5833 /* MyAddressController.m */; };
 		015BEC42249A3299003F5833 /* MyAddressController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015BEC40249A3299003F5833 /* MyAddressController.xib */; };
 		015BEC46249A3847003F5833 /* MyAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015BEC44249A3847003F5833 /* MyAddressCell.m */; };
@@ -46,6 +52,10 @@
 		016C3B2B24B21FC200D96FEF /* OrderItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016C3B2924B21FC200D96FEF /* OrderItemCell.xib */; };
 		016C3B2E24B2D01000D96FEF /* OrderSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 016C3B2D24B2D01000D96FEF /* OrderSectionHeaderView.m */; };
 		016C3B3024B2D38100D96FEF /* OrderSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016C3B2F24B2D38000D96FEF /* OrderSectionHeaderView.xib */; };
+		016C3B3424B31B6100D96FEF /* OrderCommentRiderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016C3B3224B31B6100D96FEF /* OrderCommentRiderCell.m */; };
+		016C3B3524B31B6100D96FEF /* OrderCommentRiderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016C3B3324B31B6100D96FEF /* OrderCommentRiderCell.xib */; };
+		016C3B3924B36FEB00D96FEF /* OrderCommentStoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016C3B3724B36FEB00D96FEF /* OrderCommentStoreCell.m */; };
+		016C3B3A24B36FEB00D96FEF /* OrderCommentStoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016C3B3824B36FEB00D96FEF /* OrderCommentStoreCell.xib */; };
 		016CF00B24A21DA500BD553A /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016CF00824A21DA500BD553A /* MineTableViewCell.m */; };
 		016CF00C24A21DA500BD553A /* MineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016CF00924A21DA500BD553A /* MineTableViewCell.xib */; };
 		016CF01124A21FAA00BD553A /* AccountSafetyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 016CF00F24A21FAA00BD553A /* AccountSafetyController.m */; };
@@ -170,6 +180,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0106A1EA24B61E0A00557EA6 /* OrderCommentHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderCommentHeaderView.h; sourceTree = "<group>"; };
+		0106A1EB24B61E0A00557EA6 /* OrderCommentHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderCommentHeaderView.m; sourceTree = "<group>"; };
+		0106A1ED24B61E2000557EA6 /* OrderCommentHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCommentHeaderView.xib; sourceTree = "<group>"; };
+		0106A1EF24B621F500557EA6 /* OrderCommentGoosEvaluationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderCommentGoosEvaluationCell.h; sourceTree = "<group>"; };
+		0106A1F024B621F500557EA6 /* OrderCommentGoosEvaluationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderCommentGoosEvaluationCell.m; sourceTree = "<group>"; };
+		0106A1F124B621F500557EA6 /* OrderCommentGoosEvaluationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCommentGoosEvaluationCell.xib; sourceTree = "<group>"; };
 		0123C0C624A2FC3C003F7DF9 /* MerchantsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerchantsTableViewCell.h; sourceTree = "<group>"; };
 		0123C0C724A2FC3C003F7DF9 /* MerchantsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MerchantsTableViewCell.m; sourceTree = "<group>"; };
 		0123C0C824A2FC3C003F7DF9 /* MerchantsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantsTableViewCell.xib; sourceTree = "<group>"; };
@@ -190,6 +206,9 @@
 		0123C0F724A5FD37003F7DF9 /* ShoppingCartGoodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartGoodsCell.m; sourceTree = "<group>"; };
 		0123C0F824A5FD37003F7DF9 /* ShoppingCartGoodsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartGoodsCell.xib; sourceTree = "<group>"; };
 		0123C0FB24A5FE38003F7DF9 /* ManagerDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerDefine.h; sourceTree = "<group>"; };
+		013F92B924B5AD9D004217DD /* OrderCommentImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderCommentImageCell.h; sourceTree = "<group>"; };
+		013F92BA24B5AD9D004217DD /* OrderCommentImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderCommentImageCell.m; sourceTree = "<group>"; };
+		013F92BB24B5AD9D004217DD /* OrderCommentImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCommentImageCell.xib; sourceTree = "<group>"; };
 		015BEC3E249A3299003F5833 /* MyAddressController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAddressController.h; sourceTree = "<group>"; };
 		015BEC3F249A3299003F5833 /* MyAddressController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAddressController.m; sourceTree = "<group>"; };
 		015BEC40249A3299003F5833 /* MyAddressController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAddressController.xib; sourceTree = "<group>"; };
@@ -231,6 +250,12 @@
 		016C3B2C24B2D01000D96FEF /* OrderSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderSectionHeaderView.h; sourceTree = "<group>"; };
 		016C3B2D24B2D01000D96FEF /* OrderSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderSectionHeaderView.m; sourceTree = "<group>"; };
 		016C3B2F24B2D38000D96FEF /* OrderSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderSectionHeaderView.xib; sourceTree = "<group>"; };
+		016C3B3124B31B6100D96FEF /* OrderCommentRiderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderCommentRiderCell.h; sourceTree = "<group>"; };
+		016C3B3224B31B6100D96FEF /* OrderCommentRiderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderCommentRiderCell.m; sourceTree = "<group>"; };
+		016C3B3324B31B6100D96FEF /* OrderCommentRiderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCommentRiderCell.xib; sourceTree = "<group>"; };
+		016C3B3624B36FEB00D96FEF /* OrderCommentStoreCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderCommentStoreCell.h; sourceTree = "<group>"; };
+		016C3B3724B36FEB00D96FEF /* OrderCommentStoreCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderCommentStoreCell.m; sourceTree = "<group>"; };
+		016C3B3824B36FEB00D96FEF /* OrderCommentStoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCommentStoreCell.xib; sourceTree = "<group>"; };
 		016CF00824A21DA500BD553A /* MineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
 		016CF00924A21DA500BD553A /* MineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineTableViewCell.xib; sourceTree = "<group>"; };
 		016CF00A24A21DA500BD553A /* MineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
@@ -584,6 +609,21 @@
 				016C3B0E24B07CED00D96FEF /* OrderCommentController.h */,
 				016C3B0F24B07CED00D96FEF /* OrderCommentController.m */,
 				016C3B1024B07CED00D96FEF /* OrderCommentController.xib */,
+				016C3B3124B31B6100D96FEF /* OrderCommentRiderCell.h */,
+				016C3B3224B31B6100D96FEF /* OrderCommentRiderCell.m */,
+				016C3B3324B31B6100D96FEF /* OrderCommentRiderCell.xib */,
+				016C3B3624B36FEB00D96FEF /* OrderCommentStoreCell.h */,
+				016C3B3724B36FEB00D96FEF /* OrderCommentStoreCell.m */,
+				016C3B3824B36FEB00D96FEF /* OrderCommentStoreCell.xib */,
+				013F92B924B5AD9D004217DD /* OrderCommentImageCell.h */,
+				013F92BA24B5AD9D004217DD /* OrderCommentImageCell.m */,
+				013F92BB24B5AD9D004217DD /* OrderCommentImageCell.xib */,
+				0106A1EA24B61E0A00557EA6 /* OrderCommentHeaderView.h */,
+				0106A1EB24B61E0A00557EA6 /* OrderCommentHeaderView.m */,
+				0106A1ED24B61E2000557EA6 /* OrderCommentHeaderView.xib */,
+				0106A1EF24B621F500557EA6 /* OrderCommentGoosEvaluationCell.h */,
+				0106A1F024B621F500557EA6 /* OrderCommentGoosEvaluationCell.m */,
+				0106A1F124B621F500557EA6 /* OrderCommentGoosEvaluationCell.xib */,
 			);
 			path = OrderComment;
 			sourceTree = "<group>";
@@ -1182,8 +1222,10 @@
 				01F0513B24A0E81600879F68 /* SettingsController.xib in Resources */,
 				016F7E9124AE0E1A006C1CD9 /* SearchItemCell.xib in Resources */,
 				0193D8CE2499D2D5004A4263 /* TabBarView.xib in Resources */,
+				016C3B3524B31B6100D96FEF /* OrderCommentRiderCell.xib in Resources */,
 				01CAB9CD2498977000D2FC89 /* HomePageController.xib in Resources */,
 				015BEC42249A3299003F5833 /* MyAddressController.xib in Resources */,
+				0106A1EE24B61E2000557EA6 /* OrderCommentHeaderView.xib in Resources */,
 				016C3B2B24B21FC200D96FEF /* OrderItemCell.xib in Resources */,
 				01F05117249F3B8C00879F68 /* BindPhoneNumberController.xib in Resources */,
 				015BEC47249A3847003F5833 /* MyAddressCell.xib in Resources */,
@@ -1197,14 +1239,17 @@
 				016F7E9B24AE0E9E006C1CD9 /* SearchStoreCell.xib in Resources */,
 				0123C0DF24A5A0B1003F7DF9 /* HomePageHeaderView.xib in Resources */,
 				01A223DE24AB5D5B0017D816 /* MerchantIntroductionController.xib in Resources */,
+				016C3B3A24B36FEB00D96FEF /* OrderCommentStoreCell.xib in Resources */,
 				0123C0E524A5BE02003F7DF9 /* MerchantHomePageController.xib in Resources */,
 				016C3B0C24B0678E00D96FEF /* OrderDetailController.xib in Resources */,
 				01A223E324AB6E0E0017D816 /* MerchantIntroductionAddressCell.xib in Resources */,
 				016F7EAB24B024F4006C1CD9 /* OrderStateCell.xib in Resources */,
+				013F92BD24B5AD9D004217DD /* OrderCommentImageCell.xib in Resources */,
 				01C104F824AB288D00708B34 /* OrderGoodsCell.xib in Resources */,
 				01F05120249F750C00879F68 /* AccoundLoginController.xib in Resources */,
 				01F0513024A0349700879F68 /* MyCollectionController.xib in Resources */,
 				01F05125249F7E3500879F68 /* ForgetPasswordController.xib in Resources */,
+				0106A1F324B621F500557EA6 /* OrderCommentGoosEvaluationCell.xib in Resources */,
 				01A223FE24AC8A760017D816 /* ShoppingCartController.xib in Resources */,
 				016C3B3024B2D38100D96FEF /* OrderSectionHeaderView.xib in Resources */,
 				01A2240324ACABB10017D816 /* ShopNameCell.xib in Resources */,
@@ -1278,6 +1323,7 @@
 				016F7E9524AE0E1A006C1CD9 /* SearchItemCell.m in Sources */,
 				01C104F724AB288D00708B34 /* OrderGoodsCell.m in Sources */,
 				01C104F224AB25C100708B34 /* OrderShopCell.m in Sources */,
+				016C3B3924B36FEB00D96FEF /* OrderCommentStoreCell.m in Sources */,
 				01A223E224AB6E0E0017D816 /* MerchantIntroductionAddressCell.m in Sources */,
 				01C104FC24AB2C6300708B34 /* OrderAccountsCell.m in Sources */,
 				016C3B1124B07CED00D96FEF /* OrderCommentController.m in Sources */,
@@ -1294,6 +1340,7 @@
 				0123C0F524A5FBBA003F7DF9 /* ShoppingCartListModel.m in Sources */,
 				016F7E9024AE0E1A006C1CD9 /* SearchController.m in Sources */,
 				01CAB9D12498978100D2FC89 /* DiscoverController.m in Sources */,
+				013F92BC24B5AD9D004217DD /* OrderCommentImageCell.m in Sources */,
 				016F7EA324AE2A1C006C1CD9 /* SearchResultHeaderView.m in Sources */,
 				015BEC4D249AEF54003F5833 /* MyAddressModel.m in Sources */,
 				0123C0F924A5FD37003F7DF9 /* ShoppingCartGoodsCell.m in Sources */,
@@ -1320,6 +1367,7 @@
 				016C3B2524B1D83000D96FEF /* OrderPaymentInfomationCell.m in Sources */,
 				016CF01624A220DC00BD553A /* IdentifierVerifyController.m in Sources */,
 				01F0514024A0E97000879F68 /* MyMessagesController.m in Sources */,
+				0106A1F224B621F500557EA6 /* OrderCommentGoosEvaluationCell.m in Sources */,
 				0123C0F224A5FB29003F7DF9 /* ShoppingCartListManager.m in Sources */,
 				01A223DD24AB5D5B0017D816 /* MerchantIntroductionController.m in Sources */,
 				01C104ED24AAE4D300708B34 /* OrderAddressCell.m in Sources */,
@@ -1339,8 +1387,10 @@
 				01CAB9B72498937D00D2FC89 /* BaseNavigationController.m in Sources */,
 				016F7E9A24AE0E9E006C1CD9 /* SearchStoreCell.m in Sources */,
 				01CAB9DB2498979F00D2FC89 /* OrderController.m in Sources */,
+				016C3B3424B31B6100D96FEF /* OrderCommentRiderCell.m in Sources */,
 				016CF01124A21FAA00BD553A /* AccountSafetyController.m in Sources */,
 				01C104CE24AA0DFE00708B34 /* MerchantLeftImageCell.m in Sources */,
+				0106A1EC24B61E0A00557EA6 /* OrderCommentHeaderView.m in Sources */,
 				01CAB9C22498954000D2FC89 /* BaseTabBarController.m in Sources */,
 				01CAB98724926D1000D2FC89 /* UINavigationController+Category.m in Sources */,
 				01F0512F24A0349700879F68 /* MyCollectionController.m in Sources */,
