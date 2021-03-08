@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 
 #import "BaseTabBarController.h"
+#import <UserNotifications/UserNotifications.h>
+
+#import "UserNotificationManager.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +28,10 @@
         self.window.rootViewController = baseTabBarController;
         [self.window makeKeyAndVisible];
     }
+    
+    [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:UNAuthorizationOptionSound|UNAuthorizationOptionAlert completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        [UserNotificationManager manager].isAllowNotification = granted;
+    }];
     
     return YES;
 }

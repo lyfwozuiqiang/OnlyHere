@@ -19,6 +19,7 @@
 #import "ThirdPartService.h"
 #import "CategoryDefine.h"
 
-#import "LoginController.h"
+#import "UrlDefine.h"
+#import "HttpRequest.h"
 
 #endif /* RiceGrainPrefixHeader_pch */

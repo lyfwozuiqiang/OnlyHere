@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsController">
             <connections>
+                <outlet property="cacheUsageLabel" destination="86f-Tv-ReC" id="qv8-Zo-Yxz"/>
+                <outlet property="messageRemindSwitch" destination="P12-fu-ezN" id="DiC-nl-teh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -148,6 +150,9 @@
                         </label>
                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="P12-fu-ezN">
                             <rect key="frame" x="320" y="12.5" width="51" height="31"/>
+                            <connections>
+                                <action selector="messageRemindSwitchClick:" destination="-1" eventType="touchUpInside" id="pyR-65-tlf"/>
+                            </connections>
                         </switch>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

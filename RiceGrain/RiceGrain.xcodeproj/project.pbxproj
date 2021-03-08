@@ -11,6 +11,8 @@
 		0106A1EE24B61E2000557EA6 /* OrderCommentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0106A1ED24B61E2000557EA6 /* OrderCommentHeaderView.xib */; };
 		0106A1F224B621F500557EA6 /* OrderCommentGoosEvaluationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0106A1F024B621F500557EA6 /* OrderCommentGoosEvaluationCell.m */; };
 		0106A1F324B621F500557EA6 /* OrderCommentGoosEvaluationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0106A1F124B621F500557EA6 /* OrderCommentGoosEvaluationCell.xib */; };
+		0106A22824BA900C00557EA6 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0106A22724BA900C00557EA6 /* HttpRequest.m */; };
+		0106A22C24BDD37E00557EA6 /* UserNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0106A22B24BDD37E00557EA6 /* UserNotificationManager.m */; };
 		0123C0C924A2FC3C003F7DF9 /* MerchantsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0123C0C724A2FC3C003F7DF9 /* MerchantsTableViewCell.m */; };
 		0123C0CA24A2FC3C003F7DF9 /* MerchantsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0123C0C824A2FC3C003F7DF9 /* MerchantsTableViewCell.xib */; };
 		0123C0DD24A5A07D003F7DF9 /* HomePageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0123C0DC24A5A07D003F7DF9 /* HomePageHeaderView.m */; };
@@ -186,6 +188,11 @@
 		0106A1EF24B621F500557EA6 /* OrderCommentGoosEvaluationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderCommentGoosEvaluationCell.h; sourceTree = "<group>"; };
 		0106A1F024B621F500557EA6 /* OrderCommentGoosEvaluationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderCommentGoosEvaluationCell.m; sourceTree = "<group>"; };
 		0106A1F124B621F500557EA6 /* OrderCommentGoosEvaluationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCommentGoosEvaluationCell.xib; sourceTree = "<group>"; };
+		0106A1F524B7088800557EA6 /* UrlDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlDefine.h; sourceTree = "<group>"; };
+		0106A22624BA900C00557EA6 /* HttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		0106A22724BA900C00557EA6 /* HttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		0106A22A24BDD37E00557EA6 /* UserNotificationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserNotificationManager.h; sourceTree = "<group>"; };
+		0106A22B24BDD37E00557EA6 /* UserNotificationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserNotificationManager.m; sourceTree = "<group>"; };
 		0123C0C624A2FC3C003F7DF9 /* MerchantsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerchantsTableViewCell.h; sourceTree = "<group>"; };
 		0123C0C724A2FC3C003F7DF9 /* MerchantsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MerchantsTableViewCell.m; sourceTree = "<group>"; };
 		0123C0C824A2FC3C003F7DF9 /* MerchantsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantsTableViewCell.xib; sourceTree = "<group>"; };
@@ -466,6 +473,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0106A1F424B7082E00557EA6 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				0106A1F524B7088800557EA6 /* UrlDefine.h */,
+				0106A22624BA900C00557EA6 /* HttpRequest.h */,
+				0106A22724BA900C00557EA6 /* HttpRequest.m */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		0106A22924BDD36200557EA6 /* UserNotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				0106A22A24BDD37E00557EA6 /* UserNotificationManager.h */,
+				0106A22B24BDD37E00557EA6 /* UserNotificationManager.m */,
+			);
+			path = UserNotificationManager;
+			sourceTree = "<group>";
+		};
 		0123C0E024A5BDCF003F7DF9 /* MerchantHomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +529,7 @@
 		0123C0EB24A5F89E003F7DF9 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				0106A22924BDD36200557EA6 /* UserNotificationManager */,
 				0123C0EF24A5FB29003F7DF9 /* ShoppingCartListManager */,
 			);
 			path = Manager;
@@ -836,6 +863,7 @@
 		01CAB95624926C5200D2FC89 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				0106A1F424B7082E00557EA6 /* HttpRequest */,
 				01631776249DA42F0032EF44 /* Login */,
 				01CAB9C52498975000D2FC89 /* HomePage */,
 				01CAB9C62498975000D2FC89 /* Discover */,
@@ -1148,7 +1176,7 @@
 		01CAB92624926AD300D2FC89 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = None;
 				TargetAttributes = {
 					01CAB92D24926AD300D2FC89 = {
@@ -1326,6 +1354,7 @@
 				016C3B3924B36FEB00D96FEF /* OrderCommentStoreCell.m in Sources */,
 				01A223E224AB6E0E0017D816 /* MerchantIntroductionAddressCell.m in Sources */,
 				01C104FC24AB2C6300708B34 /* OrderAccountsCell.m in Sources */,
+				0106A22C24BDD37E00557EA6 /* UserNotificationManager.m in Sources */,
 				016C3B1124B07CED00D96FEF /* OrderCommentController.m in Sources */,
 				01F05116249F3B8C00879F68 /* BindPhoneNumberController.m in Sources */,
 				0163176E249C3E020032EF44 /* AddNewAddressController.m in Sources */,
@@ -1386,6 +1415,7 @@
 				01CAB98824926D1000D2FC89 /* NSMutableArray+Safe.m in Sources */,
 				01CAB9B72498937D00D2FC89 /* BaseNavigationController.m in Sources */,
 				016F7E9A24AE0E9E006C1CD9 /* SearchStoreCell.m in Sources */,
+				0106A22824BA900C00557EA6 /* HttpRequest.m in Sources */,
 				01CAB9DB2498979F00D2FC89 /* OrderController.m in Sources */,
 				016C3B3424B31B6100D96FEF /* OrderCommentRiderCell.m in Sources */,
 				016CF01124A21FAA00BD553A /* AccountSafetyController.m in Sources */,
@@ -1432,6 +1462,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1490,6 +1521,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1526,7 +1558,7 @@
 				DEVELOPMENT_TEAM = 3U7F4XSD2B;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RiceGrain/PrefixHeaderDefine/RiceGrainPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/RiceGrain/Supporting files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1548,7 +1580,7 @@
 				DEVELOPMENT_TEAM = 3U7F4XSD2B;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RiceGrain/PrefixHeaderDefine/RiceGrainPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/RiceGrain/Supporting files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

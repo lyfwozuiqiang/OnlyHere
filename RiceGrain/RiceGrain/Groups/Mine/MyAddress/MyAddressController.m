@@ -57,6 +57,9 @@
     
     UIContextualAction *action = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal title:nil handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
         
+        [self.addressListArray removeLastObject];
+        completionHandler(YES);
+        [self.addressTableView reloadData];
     }];
     action.image = ImageNamed(@"list_delete");
     action.backgroundColor = [UIColor whiteColor];

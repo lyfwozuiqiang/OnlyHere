@@ -79,7 +79,18 @@
 }
 
 - (IBAction)registButtonClick {
-    [self.navigationController popViewControllerAnimated:YES];
+    NSMutableDictionary *paramsDict = [NSMutableDictionary dictionary];
+    [paramsDict setValue:self.phoneNumberTextField.text forKey:@"ip"];
+    [paramsDict setValue:@"1" forKey:@"name"];
+    [paramsDict setValue:@"1" forKey:@"passport"];
+    [paramsDict setValue:@"111111" forKey:@"password"];
+    [paramsDict setValue:@"" forKey:@"scene"];
+    [paramsDict setValue:@"1" forKey:@"userUuid"];
+    [HttpRequestManager  requestWithHost:UrlHost path:@"/api/passport/registe" params:paramsDict succeesHandle:^(NSDictionary * _Nonnull responseDict) {
+        [self.navigationController popViewControllerAnimated:YES];
+    } errorHandle:^(NSError * _Nonnull error) {
+        
+    }];
 }
 
 - (IBAction)userAgreementButtonClick {

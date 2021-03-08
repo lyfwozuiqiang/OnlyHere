@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *mineTableView;
 @property (strong, nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet UIButton *headPortraitButton;
+@property (strong, nonatomic) IBOutlet UIView *serviceView;
 
 @property (strong, nonatomic) NSArray *titleListArray;
 @property (strong, nonatomic) NSArray *imageListArray;
@@ -99,13 +100,25 @@
 }
 
 - (void)customerServiceItemClick {
-    LoginController *loginVc = [LoginController new];
-    BaseNavigationController *navigationController = [[BaseNavigationController alloc] initWithRootViewController:loginVc];
-    navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:navigationController animated:YES completion:nil];
+//    UIViewController *loginVc = [NSClassFromString(@"LoginController") new];
+//    BaseNavigationController *navigationController = [[BaseNavigationController alloc] initWithRootViewController:loginVc];
+//    navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
+//    [self presentViewController:navigationController animated:YES completion:nil];
+    self.serviceView.frame = [UIScreen mainScreen].bounds;
+    [KeyWindow addSubview:self.serviceView];
 }
+
 - (IBAction)changeHeadPortraitButtonClick:(UIButton *)sender {
     
+}
+
+- (IBAction)serviceViewClickHandle:(id)sender {
+    [self.serviceView removeFromSuperview];
+}
+
+- (IBAction)pasteButtonClick {
+    [[UIPasteboard generalPasteboard] setString:@"hello world"];
+    [self.serviceView removeFromSuperview];
 }
 
 //MARK:- Method
