@@ -1,0 +1,139 @@
+
+无法验证开发者身份：sudo spctl --master-disable 
+Pod下载指定版本：sudo gem install cocoapods --version 1.0.0
+1.列出目前gem中安装的所有Cocoapods的组件
+gem list --local | grep cocoapods
+2.然后需要一个个的卸载一遍
+gem uninstall cocoapods<文件名称>
+3.然后再重新安装一遍需要的特定版本Cocoapods
+sudo gem install cocoapods -v 1.7.5
+
+1、gem介绍
+   首先我们从cocoapod 是如何安装的入手分析。sudo gem install cocoapods 这段代码是最基本的安装命令，执行后会安装最新的 cocoapods 版本。注意到，用的是 gem 命令，gem 又是个啥呢？
+   gem 是封装起来的 Ruby 应用程序或代码库，终端使用的 gem 命令，是指通过 RubyGems 管理 Gem 包。也就是说 cocoapods 是一个 Ruby 代码包，用 gem 来安装。
+   如果有个管理工具，可以安装和管理多个 Ruby 环境，在每个 Ruby 环境中，用 gem 安装 cocoapods，不就实现了不同版本的 cocoapods 共存了吗？ruby 刚好有个版本管理工具，可以做到这一点。
+
+2、RVM介绍
+RVM 用于帮助你安装 Ruby 环境，帮你管理多个 Ruby 环境，帮你管理你开发的每个 Ruby 应用使用机器上哪个 Ruby 环境。
+
+总结下来就是，使用 RVM 安装不同版本的 Ruby 环境，在每个环境中安装 cocoapods，此时每个 Ruby 环境中的 cocoapods 可以不同。
+
+3、卸载当前机器上的 cocoapods
+终端输入 gem list ，查看当前 gem 下安装的所有包
+输入命令 sudo gem uninstall XXX ，XXX 是你要卸载的包名
+卸载第一步中所有 cocoapods 开头的包
+反复执行前面几步，直到所有的 cocoapods 开头的包都已经被卸载了
+4、安装 rvm 和多个版本的 Ruby
+1）安装 rvm，使用命令
+curl -L get.rvm.io | bash -s stable && source ~/.rvm/scripts/rvm
+2）到 https://rvm.io/binaries 下载相应版本的 ruby 包。选择 osx/10.12/x86_64/
+执行安装命令
+rvm mount ~/Downloads/ruby-2.2.3.tar.bz2
+查看已知ruby版本 rvm list known
+选择需要安装的版本 rvm install 2.6.3
+3）切换ruby版本
+执行 rvm list 可查看当前安装的 ruby 版本列表，执行 rvm use <Version> 可切换到不同版本的 ruby。使用 rvm use <Version> --default，可设置默认 ruby 版本。
+5、某个 ruby 版本下，安装指定版本的 cocoapods
+首先切换自己需要安装cocoapods的ruby版本，执行安装cocoapods命令
+如果你是 mac 的 10.11 及以上系统，需要使用命令
+sudo gem install cocoapods -v <Version> -n /usr/local/bin
+例如命令 sudo gem install cocoapods -v 1.5.3 -n /usr/local/bin
+否则的话使用命令 sudo gem install cocoapods -v <Version>
+安装成功后，可通过 gem list 或者 pod --version，查看对应的 cocoapods 信息。
+6、指令补充及遇到的问题
+ruby rvm 常用指令
+$ ruby -v # 查看ruby 版本
+$ rvm list known # 列出已知的 ruby 版本
+$ rvm install 2.3.0 # 选择指定 ruby 版本进行更新
+$ rvm get stable # 更新 rvm
+$ rvm use 2.2.2 # 切换到指定 ruby 版本
+$ rvm use 2.2.2 --default # 设置指定 ruby 版本为默认版本
+$ rvm list # 查询已安装的 ruby 版本
+$ rvm remove 1.9.2 # 卸载移除 指定 ruby 版本
+
+$ curl -L https://get.rvm.io | bash -s stable # 安装 rvm 环境
+$ curl -sSL https://get.rvm.io | bash -s stable --ruby # 默认安装 rvm 最新版本
+$ curl -sSL https://get.rvm.io | bash -s stable --ruby=2.3.0 # 安装 rvm 指定版本
+$ source ~/.rvm/scripts/rvm # 载入 rvm
+
+Gem
+$ gem -v # 查看 gem 版本
+$ gem source # 查看 gem 配置源
+$ gem source -l # 查看 gem 配置源目录
+$ gem sources -a url # 添加 gem 配置源（url 需换成网址）
+$ gem sources --add url # 添加 gem 配置源（url 需换成网址）
+$ gem sources -r url # 删除 gem 配置源（url 需换成网址）
+$ gem sources --remove url # 删除 gem 配置源（url 需换成网址）
+$ gem update # 更新 所有包
+$ gem update --system # 更新 Ruby Gems 软件
+
+$ gem install rake # 安装 rake，从本地或远程服务器
+$ gem install rake --remote # 安装 rake，从远程服务器
+$ gem install watir -v 1.6.2 # 安装 指定版本的 watir
+$ gem install watir --version 1.6.2 # 安装 指定版本的 watir
+$ gem uninstall rake # 卸载 rake 包
+$ gem list d # 列出 本地以 d 打头的包
+$ gem query -n ''[0-9]'' --local # 查找 本地含有数字的包
+$ gem search log --both # 查找 从本地和远程服务器上查找含有 log 字符串的包
+$ gem search log --remoter # 查找 只从远程服务器上查找含有 log 字符串的包
+$ gem search -r log # 查找 只从远程服务器上查找含有log字符串的包
+
+$ gem help # 提醒式的帮助
+$ gem help install # 列出 install 命令 帮助
+$ gem help examples # 列出 gem 命令使用一些例子
+$ gem build rake.gemspec # 把 rake.gemspec 编译成 rake.gem
+$ gem check -v pkg/rake-0.4.0.gem # 检测 rake 是否有效
+$ gem cleanup # 清除 所有包旧版本，保留最新版本
+$ gem contents rake # 显示 rake 包中所包含的文件
+$ gem dependency rails -v 0.10.1 # 列出 与 rails 相互依赖的包
+$ gem environment # 查看 gem 的环境
+
+$ sudo gem -v # 查看 gem 版本（以管理员权限）
+$ sudo gem install cocoa pods # 安装 CocoaPods（以管理员权限）
+$ sudo gem install cocoapods # 安装 CocoaPods（以管理员权限）
+$ sudo gem install cocoapods --pre # 安装 CocoaPods 至预览版（以管理员权限）
+$ sudo gem install cocoapods -v 0.39.0 # 安装 CocoaPods 指定版本（以管理员权限）
+$ sudo gem update cocoapods # 更新 CocoaPods 至最新版（以管理员权限）
+$ sudo gem update cocoapods --pre # 更新 CocoaPods 至预览版（以管理员权限）
+$ sudo gem uninstall cocoapods -v 0.39.0 # 移除 CocoaPods 指定版本（以管理员权限）
+
+pod
+$ pod setup # CocoaPods 将信息下载到~/.cocoapods/repos 目录下。如果安装 CocoaPods 时不执行此命令，在初次执行 pod intall 命令时，系统也会自动执行该指令
+$ pod --version # 检查 CocoaPods 是否安装成功及其版本号
+$ pod install # 安装 CocoaPods 的配置文件 Podfile
+
+三、使用Bundler管理
+使用rvm方案比较直观，主体思路就是使用方便我们切换Cocoapods版本的工具，着手点主要在“切换”上。下面要讲到的Bundler方案，着手点主要在“配置”上。
+
+1、Bundler简介
+大家知道Cocoapods的核心是一个叫做Podfile的文件，通过在Podfile上写入项目所需pod的配置，我们可以通过简单的pod install pod update命令来集成项目所需的pod。Cocoapods的这个思路其实是借鉴了一个叫做Bundler的工具。
+
+Bundler 是一个 Ruby 项目的管理工具，可以理解成为 Ruby 界的 "CocoaPods"。准确来说，CocoaPods 是借鉴了 Bundler 的思想和模式。由于 CocoaPods 本身也是一个 Ruby 项目，因此我们可以通过 Bundler 来管理我们要使用的 CocoaPods 版本。
+
+2、具体步骤
+1）安装Bundler
+
+Bundler本身就是一个gem，打开 terminal 输入下面的命令。
+gem install bundler
+
+2）创建 Gemfile 文件
+类似Cocoapods的Podfile文件，我们需要创建一个Gemfile文件，文件位置和Podifle所在位置相同即可。可以看到它跟 Podfile 的初始化指令 pod init 非常类似，Gemfile 和 Podfile 这两个文件名也非常类似。
+bundle init
+3）配置 Gemfile 内容
+
+假如我们需要使用 1.7.4 的 CocoaPods，可以将 Gemfile 的内容设置为以下内容。可以看到它跟 Podfile 的配置风格 pod 'AFNetworking', '~>3.0' 非常类似。
+source "https://gems.ruby-china.com"
+gem 'cocoapods','1.7.4'
+
+4）安装特定版本的 CocoaPods
+执行安装指令，类似指令 pod install
+bundle install
+
+这里 bundle install 后可能很长时间没有反应，是因为source 源地址可能为https://rubygems.org，但由于被墙了，建议使用国内地址 https://gems.ruby-china.com。或者使用指令全局镜像替换 bundle config 'mirror.https://rubygems.org' 'https://gems.ruby-china.com'，因为一些外网的 Gemfile 是无法更改的。
+
+5）使用安装的CocoaPods
+使用 Bundler 控制上一步安装的 CocoaPods 来安装我们所需的 Pods。除了有 bundle exec 这个前缀，其他和我们平时使用 pod 命令一样。若去掉 bundle exec 这个前缀，运行的就是默认版本的 Cocoapods 了
+bundle exec pod install
+
+6）效果展示
+我们可以看到不同的路径下 pod --version 出的版本是不一样的

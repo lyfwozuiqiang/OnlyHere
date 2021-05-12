@@ -1,0 +1,4 @@
+cd ~ //进入home目录
+ls -al //列出所有文件
+cd .subversion/auth //进入保存svn用户名和密码的auth目录
+rm -rf * //删除该目下下所有文件
