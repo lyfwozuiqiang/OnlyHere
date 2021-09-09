@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  SimpleDefine
+//
+//  Created by 刘一 on 2021/5/28.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define ImageNamed(name) [UIImage imageNamed:name]
+
+
+#endif /* PrefixHeader_pch */
