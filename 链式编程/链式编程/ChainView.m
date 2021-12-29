@@ -20,4 +20,11 @@
     return chainView;
 }
 
++ (ChainView * _Nullable (^)(CGRect))init {
+    ChainView *(^initView)(CGRect) = ^(CGRect viewFrame) {
+        return [[self alloc] initWithFrame:viewFrame];
+    };
+    return initView;
+}
+
 @end

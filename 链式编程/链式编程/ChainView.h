@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (ChainView * _Nonnull (^)(UIColor * _Nonnull color))bgColor;
 
++ (ChainView * _Nullable (^)(CGRect))init;
+
 @end
 
 NS_ASSUME_NONNULL_END
