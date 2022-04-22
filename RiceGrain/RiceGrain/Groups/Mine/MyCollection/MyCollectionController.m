@@ -25,7 +25,7 @@
     [self.myCollectionTableView registerNib:[UINib nibWithNibName:@"MyCollectionCell" bundle:nil] forCellReuseIdentifier:@"MyCollectionCell"];
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 10;
 }
@@ -35,7 +35,7 @@
     return cell;
 }
 
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 102;
 }

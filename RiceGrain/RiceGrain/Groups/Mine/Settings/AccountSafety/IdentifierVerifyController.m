@@ -20,7 +20,7 @@
     self.title = @"身份验证";
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)viewTapHandle:(id)sender {
     [self.view endEditing:YES];
 }

@@ -38,7 +38,7 @@
     [self.orderSettlementTableView registerNib:[UINib nibWithNibName:@"OrderPaymentTypeCell" bundle:nil] forCellReuseIdentifier:@"OrderPaymentTypeCell"];
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 4;
 }
@@ -81,7 +81,7 @@
     }
 }
 
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         return UITableViewAutomaticDimension;
@@ -109,17 +109,17 @@
     }
 }
 
-//MARK:- OrderRemarksCellDelegate
+//MARK: - OrderRemarksCellDelegate
 - (void)didRemarksChanged:(NSString *)remark {
     NSLog(@"didRemarksChanged = %@",remark);
 }
-//MARK:- OrderPaymentTypeCellDelegate
+//MARK: - OrderPaymentTypeCellDelegate
 - (void)didPaymentTypeSelectedAtIndex:(NSInteger)index {
     NSLog(@"didPaymentTypeSelectedAtIndex %ld",index);
     self.paymentType = index;
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)tableViewTapHandle:(id)sender {
     [self.orderSettlementTableView endEditing:YES];
 }

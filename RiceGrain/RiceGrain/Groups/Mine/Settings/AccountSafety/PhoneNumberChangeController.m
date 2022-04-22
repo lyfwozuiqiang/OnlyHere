@@ -32,7 +32,7 @@
     [self confirmChangeBindButtonEnable:NO];
 }
 
-//MARK:- UITextFieldDelegate
+//MARK: - UITextFieldDelegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     NSString *changedString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     if (textField == self.phoneNumberTextField) {
@@ -42,7 +42,7 @@
     }
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)phoneNumberTextFieldEditingChanged:(UITextField *)sender {
     if (!self.isSendVerifyCode) {
         [self changeSendVerityCodeButtonEnable:sender.text.length == 11];
@@ -75,7 +75,7 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-//MARK:- Method
+//MARK: - Method
 - (void)changeSendVerityCodeButtonEnable:(BOOL)enable {
     self.sendVerifyCodeButton.enabled = enable;
     if (enable) {

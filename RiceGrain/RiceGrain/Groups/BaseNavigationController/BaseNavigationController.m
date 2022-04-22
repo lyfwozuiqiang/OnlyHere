@@ -34,7 +34,7 @@
     self.interactivePopGestureRecognizer.delegate = self;
 }
 
-//MARK:- rewrite push function
+//MARK: - rewrite push function
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.viewControllers.count > 0) {
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"nav_back" imagePositon:PositionLeft target:self action:@selector(leftBarButtonItemClick)];
@@ -42,7 +42,7 @@
     [super pushViewController:viewController animated:animated];
 }
 
-//MARK:- UINavigationControllerDelegate
+//MARK: - UINavigationControllerDelegate
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.viewControllers.count == 1) {
         self.interactivePopGestureRecognizer.enabled = NO;
@@ -51,11 +51,11 @@
     }
 }
 
-//MARK:- Action
+//MARK: - Action
 - (void)leftBarButtonItemClick {
     [self popViewControllerAnimated:YES];
 }
-//MARK:- Method
+//MARK: - Method
 - (void)backToViewController {
     [self popViewControllerAnimated:YES];
 }

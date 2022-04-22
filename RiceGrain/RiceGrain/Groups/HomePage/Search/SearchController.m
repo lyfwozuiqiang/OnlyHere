@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger,SearchResultType) {
     [self.searchResultTableView registerNib:[UINib nibWithNibName:@"SearchResultHeaderView" bundle:nil] forHeaderFooterViewReuseIdentifier:@"SearchResultHeaderView"];
 }
 
-//MARK:- UICollectionViewDataSource
+//MARK: - UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     if (self.searchRecordArray.count) {
         return 2;
@@ -94,7 +94,7 @@ typedef NS_ENUM(NSInteger,SearchResultType) {
     return CGSizeMake(kScreenWidth, 55);
 }
 
-//MARK:- UICollectionViewDelegateFlowLayout
+//MARK: - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     NSString *titleString = self.searchRecordArray[indexPath.row];
@@ -102,7 +102,7 @@ typedef NS_ENUM(NSInteger,SearchResultType) {
     return CGSizeMake(titleStringLength + 30, 28);
 }
 
-//MARK:- UICollectionViewDelegate
+//MARK: - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [self.searchView endEditing:YES];
     if (self.searchRecordArray.count) {
@@ -116,7 +116,7 @@ typedef NS_ENUM(NSInteger,SearchResultType) {
     }
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 15;
 }
@@ -130,7 +130,7 @@ typedef NS_ENUM(NSInteger,SearchResultType) {
         return cell;
     }
 }
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (self.searchType == SearchResultStore) {
         return 102;
@@ -149,7 +149,7 @@ typedef NS_ENUM(NSInteger,SearchResultType) {
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 58;
 }
-//MARK:- UITextFieldDelegate
+//MARK: - UITextFieldDelegate
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField endEditing:YES];
     [self saveSearchHistoryRecord];
@@ -168,7 +168,7 @@ typedef NS_ENUM(NSInteger,SearchResultType) {
     return YES;
 }
 
-//MARK:- SearchReusableViewDelegate
+//MARK: - SearchReusableViewDelegate
 - (void)didRightButtonClickAtSection:(NSInteger)headerSection {
     if (self.searchRecordArray.count) {
         if (headerSection == 0) {
@@ -183,18 +183,18 @@ typedef NS_ENUM(NSInteger,SearchResultType) {
     [self.searchCollectionView reloadData];
 }
 
-//MARK:- SearchReusableViewDelegate
+//MARK: - SearchReusableViewDelegate
 - (void)didSearchResultButtonClickWithType:(NSInteger)type {
     self.searchType = type;
     [self.searchResultTableView reloadData];
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)cancelButtonClick {
     [self dismissViewControllerAnimated:NO completion:nil];
 }
 
-//MARK:- Method
+//MARK: - Method
 - (void)configSearchView {
     UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 30)];
     self.searchView.frame = CGRectMake(0, 10, kScreenWidth - 15, 30);
@@ -216,7 +216,7 @@ typedef NS_ENUM(NSInteger,SearchResultType) {
     }
 }
 
-//MARK:- Lazy
+//MARK: - Lazy
 - (NSMutableArray *)searchRecordArray {
     if (!_searchRecordArray) {
         _searchRecordArray = [NSMutableArray array];

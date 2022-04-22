@@ -63,7 +63,7 @@
     [self.navigationController changeNavigationControllerLeftBarButtonItem:ImageNamed(@"nav_back")];
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 4;
 }
@@ -104,7 +104,7 @@
     return nil;
 }
 
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     if (section != 2) {
         OrderSectionHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"OrderSectionHeaderView"];
@@ -137,7 +137,7 @@
     NSLog(@"OrderDetailController %@",indexPath);
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)leftButtonClick {
     if (self.orderStateType == OrderStateWaitPayment) {
         NSLog(@"leftButtonClick OrderStateWaitPayment");
@@ -177,7 +177,7 @@
     }
 }
 
-//MARK:- Method
+//MARK: - Method
 - (void)configButtonInterface {
     if (self.orderStateType == OrderStateWaitPayment) {
         self.orderStateLabel.text = @"待付款";
@@ -239,7 +239,7 @@
     }
 }
 
-//MARK:- Lazy
+//MARK: - Lazy
 - (NSMutableArray *)sectionTitleArray {
     if (!_sectionTitleArray) {
         _sectionTitleArray = [NSMutableArray arrayWithObjects:@"茶颜悦色",@"配送信息",@"",@"订单信息", nil];

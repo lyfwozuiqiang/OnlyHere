@@ -52,7 +52,7 @@
     self.selectedIndex = [noti.object integerValue];
 }
 
-//MARK:- Lazy
+//MARK: - Lazy
 - (NSArray *)titleArray {
     if (!_titleArray) {
         _titleArray = [NSArray arrayWithObjects:@"首页",@"发现",@"订单",@"我的", nil];

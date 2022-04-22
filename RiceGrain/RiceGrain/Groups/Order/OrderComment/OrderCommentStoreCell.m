@@ -30,12 +30,12 @@
     self.describeView.layer.borderColor = HexColor(0xEBEBEB).CGColor;
 }
 
-//MARK:- UITextViewDelegate
+//MARK: - UITextViewDelegate
 - (void)textViewDidChange:(UITextView *)textView {
     self.placeholderLabel.hidden = textView.text.length;
 }
 
-//MARK:- UICollectionViewDataSource
+//MARK: - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (self.pictureNumbers == 0) {
         return 1;
@@ -62,22 +62,22 @@
     }
     return cell;
 }
-//MARK:- UICollectionViewDelegateFlowLayout
+//MARK: - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return CGSizeMake(83, 83);
 }
 
-//MARK:- UICollectionViewDelegate
+//MARK: - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"didSelectItemAtIndexPath %@",indexPath);
 }
 
-//MARK:- OrderCommentImageCellDelegate
+//MARK: - OrderCommentImageCellDelegate
 - (void)didDeleteImageButtonClickAtCell:(OrderCommentImageCell *)cell {
     NSIndexPath *indexPath = [self.picturesCollectionView indexPathForCell:cell];
     NSLog(@"%@",indexPath);
 }
-//MARK:- Action
+//MARK: - Action
 - (IBAction)starButtonClick:(UIButton *)sender {
     for (UIButton *starButton in self.starButtonContainerView.subviews) {
         if (starButton.tag <= sender.tag) {

@@ -39,7 +39,7 @@
     [self getImageDiskCache];
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)accountSafetyButtonClick {
     AccountSafetyController *accountSafetyVc = [AccountSafetyController new];
     [self.navigationController pushViewController:accountSafetyVc animated:YES];
@@ -64,7 +64,7 @@
     NSLog(@"logoutButtonClick");
 }
 
-//MARK:- Method
+//MARK: - Method
 - (void)getImageDiskCache {
     NSURLCache *imageCache = [AFImageDownloader defaultURLCache];
     CGFloat diskUsage = (imageCache.currentDiskUsage - 86016)/1024.0/1024.0;

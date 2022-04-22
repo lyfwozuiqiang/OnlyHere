@@ -34,7 +34,7 @@
     [self.merchantIntroductionTableView registerNib:[UINib nibWithNibName:@"MerchantLicenseCell" bundle:nil] forCellReuseIdentifier:@"MerchantLicenseCell"];
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 3;
 }
@@ -51,7 +51,7 @@
         return cell;
     }
 }
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewAutomaticDimension;
 }

@@ -23,7 +23,7 @@
     self.title = @"账户安全";
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)identifierVerifyButtonClick {
     IdentifierVerifyController *identifierVerifyVc = [IdentifierVerifyController new];
     [self.navigationController pushViewController:identifierVerifyVc animated:YES];

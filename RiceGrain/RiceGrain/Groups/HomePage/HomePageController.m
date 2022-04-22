@@ -58,7 +58,7 @@
     [self addNavigationTitleViewWithFrame:titleViewRect];
 
 }
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 55;
 }
@@ -67,7 +67,7 @@
     MerchantsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MerchantsTableViewCell"];
     return cell;
 }
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 102;
 }
@@ -86,7 +86,7 @@
     [self.navigationController pushViewController:merchantHomePageVc animated:YES];
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)leftBarButtonItemClick {
     NSLog(@"leftBarButtonItemClick");
 }
@@ -106,7 +106,7 @@
     navi.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:navi animated:NO completion:nil];
 }
-//MARK:- Method
+//MARK: - Method
 - (void)addRightBarButtonItems {
     UIBarButtonItem *shooppingCartBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"nav_cart" imagePositon:PositionRight target:self action:@selector(shooppingCartBarButtonItemClick)];
     UIBarButtonItem *qrcodeBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"nav_qrcode" imagePositon:PositionRight target:self action:@selector(qrcodeBarButtonItemClick)];
@@ -129,7 +129,7 @@
     [titleViewButton addTarget:self action:@selector(titleViewClick) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.titleView = titleViewButton;
 }
-//MARK:- Lazy
+//MARK: - Lazy
 - (TabBarView *)tabBarView {
     if (!_tabBarView) {
         _tabBarView = [[NSBundle mainBundle] loadNibNamed:@"TabBarView" owner:nil options:nil].firstObject;

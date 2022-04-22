@@ -30,7 +30,7 @@
     }
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)deleteImageButtonClick {
     if ([self.delegate respondsToSelector:@selector(didDeleteImageButtonClickAtCell:)]) {
         [self.delegate didDeleteImageButtonClickAtCell:self];

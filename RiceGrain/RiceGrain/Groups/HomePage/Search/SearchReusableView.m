@@ -34,7 +34,7 @@
     }
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)rightButtonClick {
     if ([self.delegate respondsToSelector:@selector(didRightButtonClickAtSection:)]) {
         [self.delegate didRightButtonClickAtSection:self.headerSection];

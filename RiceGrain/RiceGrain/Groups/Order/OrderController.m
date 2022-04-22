@@ -36,7 +36,7 @@
     [self.orderListTableView registerNib:[UINib nibWithNibName:@"OrderStateDeliverCell" bundle:nil] forCellReuseIdentifier:@"OrderStateDeliverCell"];
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 15;
 }
@@ -63,7 +63,7 @@
     }
     return cell;
 }
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewAutomaticDimension;
 }
@@ -74,7 +74,7 @@
     [self.navigationController pushViewController:orderDetailVc animated:YES];
 }
 
-//MARK:- OrderStateCellDeleate
+//MARK: - OrderStateCellDeleate
 - (void)didLeftButtonClickAtCell:(OrderStateCell *)cell {
     NSIndexPath *indexPath = [self.orderListTableView indexPathForCell:cell];
     NSLog(@"didLeftButtonClickAtCell %@",indexPath);
@@ -85,7 +85,7 @@
     NSLog(@"didRightButtonClickAtCell %@",indexPath);
 }
 
-//MARK:- OrderStateDeliverCellDeleate
+//MARK: - OrderStateDeliverCellDeleate
 - (void)didContactCustomerServiceButtonClickAtCell:(OrderStateDeliverCell *)cell {
     NSIndexPath *indexPath = [self.orderListTableView indexPathForCell:cell];
     NSLog(@"didContactCustomerServiceButtonClickAtCell %@",indexPath);
@@ -95,7 +95,7 @@
     NSIndexPath *indexPath = [self.orderListTableView indexPathForCell:cell];
     NSLog(@"didCancelOrderButtonClickAtCell %@",indexPath);
 }
-//MARK:- Lazy
+//MARK: - Lazy
 - (TabBarView *)tabBarView {
     if (!_tabBarView) {
         _tabBarView = [[NSBundle mainBundle] loadNibNamed:@"TabBarView" owner:nil options:nil].firstObject;

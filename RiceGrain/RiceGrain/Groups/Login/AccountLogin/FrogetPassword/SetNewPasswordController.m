@@ -25,7 +25,7 @@
     [self changePassowordLoginButtonEnable:NO];
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)viewTapHandle:(id)sender {
     [self.view endEditing:YES];
 }
@@ -49,7 +49,7 @@
 }
 
 
-//MARK:- Method
+//MARK: - Method
 - (void)changePassowordLoginButtonEnable:(BOOL)enable {
     self.confirmChangeButton.enabled = enable;
     if (enable) {

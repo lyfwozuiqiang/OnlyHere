@@ -68,7 +68,7 @@
     }
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)leftButtonClick {
     if ([self.delegate respondsToSelector:@selector(didLeftButtonClickAtCell:)]) {
         [self.delegate didLeftButtonClickAtCell:self];

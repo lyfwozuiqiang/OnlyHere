@@ -34,9 +34,9 @@
     NSString *changedString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     return changedString.length <= 11;
 }
-//MARK:- UITextFieldDelegate
+//MARK: - UITextFieldDelegate
 
-//MARK:- Action
+//MARK: - Action
 - (void)rightBarButtonItemClick {
     NSLog(@"login_apple rightBarButtonItemClick");
 }
@@ -78,7 +78,7 @@
     NSLog(@"AccoundLoginController weChatLoginButtonClick");
 }
 
-//MARK:- Method
+//MARK: - Method
 - (void)changePassowordLoginButtonEnable:(BOOL)enable {
     self.confimPasswordLoginButton.enabled = enable;
     if (enable) {

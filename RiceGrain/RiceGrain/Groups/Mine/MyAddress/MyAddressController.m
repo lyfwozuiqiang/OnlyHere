@@ -36,7 +36,7 @@
     
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.addressListArray.count;
 }
@@ -48,7 +48,7 @@
     return cell;
 }
 
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewAutomaticDimension;
 }
@@ -68,20 +68,20 @@
 }
 
 
-//MARK:- MyAddressCellDelegate
+//MARK: - MyAddressCellDelegate
 - (void)didSetDefaultButtonClickAtCell:(MyAddressCell *)cell {
     NSIndexPath *indexPath = [self.addressTableView indexPathForCell:cell];
     NSLog(@"%@",indexPath);
     [self.addressTableView reloadData];
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)addNewAddressButtonClick {
     AddNewAddressController *addNewAddressVc = [AddNewAddressController new];
     [self.navigationController pushViewController:addNewAddressVc animated:YES];
 }
 
-//MARK:- Lazy
+//MARK: - Lazy
 - (NSMutableArray *)addressListArray {
     if (!_addressListArray) {
         _addressListArray = [NSMutableArray array];

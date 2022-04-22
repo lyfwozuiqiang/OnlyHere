@@ -40,14 +40,14 @@
     [self.containerView addSubview:self.webView];
 }
 
-//MARK:- Method
+//MARK: - Method
 - (void)loadRequest:(NSString *)url {
     NSURL *requestUrl = [NSURL URLWithString:url];
     NSURLRequest *request = [NSURLRequest requestWithURL:requestUrl];
     [self.webView loadRequest:request];
 }
 
-//MARK:- Lazy
+//MARK: - Lazy
 - (WKWebView *)webView {
     if (!_webView) {
         _webView = [[WKWebView alloc] initWithFrame:CGRectZero];

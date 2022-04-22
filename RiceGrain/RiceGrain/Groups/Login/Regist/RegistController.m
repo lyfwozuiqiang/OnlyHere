@@ -33,7 +33,7 @@
     [self changeSendVerityCodeButtonEnable:NO];
 }
 
-//MARK:- UITextFieldDelegate
+//MARK: - UITextFieldDelegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     NSString *changedString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     if (textField == self.phoneNumberTextField) {
@@ -44,7 +44,7 @@
         return YES;
     }
 }
-//MARK:- Action
+//MARK: - Action
 - (IBAction)loginButtonClick {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -101,7 +101,7 @@
     NSLog(@"privacyPolicyButtonClick");
 }
 
-//MARK:- Method
+//MARK: - Method
 - (void)changeSendVerityCodeButtonEnable:(BOOL)enable {
     self.sendVerifyCodeButton.enabled = enable;
     if (enable) {

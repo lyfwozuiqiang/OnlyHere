@@ -46,7 +46,7 @@
     }
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.cartListArray.count;
 }
@@ -55,17 +55,17 @@
     ShoppingCartGoodsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ShoppingCartGoodsCell"];
     return cell;
 }
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 75;
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)viewTabHandle:(id)sender {
     [self showRemoveAnimation];
 }
 
-//MARK:- Method
+//MARK: - Method
 - (void)showEnterAnimation {
     self.alphaView.alpha = 0;
     self.shoppingCartBackgroundView.frame = CGRectMake(0, kScreenHeight - kTabBarHeight - 56, kScreenWidth, 0);

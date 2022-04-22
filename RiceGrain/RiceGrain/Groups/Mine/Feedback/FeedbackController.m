@@ -21,7 +21,7 @@
     self.title = @"意见反馈";
 }
 
-//MARK:- UITextViewDelegate
+//MARK: - UITextViewDelegate
 - (void)textViewDidChange:(UITextView *)textView {
     if (textView.text.length > 0) {
         self.placeholderLabel.hidden = YES;
@@ -30,7 +30,7 @@
     }
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)viewTapHandle:(id)sender {
     [self.view endEditing:YES];
 }

@@ -48,7 +48,7 @@
     self.mineTableView.contentInset = UIEdgeInsetsMake(0, 0, 100, 0);
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.titleListArray.count;
 }
@@ -60,12 +60,12 @@
     cell.imageArray = self.imageListArray[indexPath.row];
     return cell;
 }
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 160;
 }
 
-//MARK:- MineTableViewCellDelegate
+//MARK: - MineTableViewCellDelegate
 - (void)mineTableViewCell:(MineTableViewCell *)cell didClickItemWithTitle:(NSString *)title {
     if ([title isEqualToString:@"我的地址"]) {
         MyAddressController *myAddressVc = [MyAddressController new];
@@ -93,7 +93,7 @@
     }
 }
 
-//MARK:- Action
+//MARK: - Action
 - (void)settingItemClick {
     SettingsController *settingsVc = [SettingsController new];
     [self.navigationController pushViewController:settingsVc animated:YES];
@@ -121,7 +121,7 @@
     [self.serviceView removeFromSuperview];
 }
 
-//MARK:- Method
+//MARK: - Method
 - (void)addLeftBarButtonItems {
     UIBarButtonItem *settingItem = [UIBarButtonItem barButtonItemWithImageName:@"nav_setting" imagePositon:PositionLeft target:self action:@selector(settingItemClick)];
     UIBarButtonItem *customerServiceItem = [UIBarButtonItem barButtonItemWithImageName:@"nav_customer_service" imagePositon:PositionLeft target:self action:@selector(customerServiceItemClick)];
@@ -133,7 +133,7 @@
     self.mineTableView.tableHeaderView = self.headerView;
 }
 
-//MARK:- Lazy
+//MARK: - Lazy
 - (TabBarView *)tabBarView {
     if (!_tabBarView) {
         _tabBarView = [[NSBundle mainBundle] loadNibNamed:@"TabBarView" owner:nil options:nil].firstObject;

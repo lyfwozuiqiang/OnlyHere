@@ -50,7 +50,7 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:kTabBarItemClick object:@(sender.tag - 10)];
 }
 
-//MARK:- Lazy
+//MARK: - Lazy
 - (NSArray *)normalStateImageArray {
     if (!_normalStateImageArray) {
         _normalStateImageArray = [NSArray arrayWithObjects:@"tab_home_def",@"tab_find_def",@"tab_order_def",@"tab_me_def", nil];

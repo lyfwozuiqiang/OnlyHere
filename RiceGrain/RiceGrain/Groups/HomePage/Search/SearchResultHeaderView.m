@@ -36,7 +36,7 @@
     }
 }
 
-//MARK:- Action
+//MARK: - Action
 
 - (IBAction)searchResultTypeButtonClick:(UIButton *)sender {
     if ([self.delegate respondsToSelector:@selector(didSearchResultButtonClickWithType:)]) {

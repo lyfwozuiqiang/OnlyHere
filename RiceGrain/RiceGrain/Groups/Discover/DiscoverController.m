@@ -26,7 +26,7 @@
     [self.view addSubview:self.tabBarView];
 }
 
-//MARK:- Lazy
+//MARK: - Lazy
 - (TabBarView *)tabBarView {
     if (!_tabBarView) {
         _tabBarView = [[NSBundle mainBundle] loadNibNamed:@"TabBarView" owner:nil options:nil].firstObject;

@@ -25,7 +25,7 @@
     [self.merchantCommentTableView registerNib:[UINib nibWithNibName:@"MerchantCommentCell" bundle:nil] forCellReuseIdentifier:@"MerchantCommentCell"];
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 11;
 }
@@ -35,7 +35,7 @@
     return cell;
 }
 
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewAutomaticDimension;
 }

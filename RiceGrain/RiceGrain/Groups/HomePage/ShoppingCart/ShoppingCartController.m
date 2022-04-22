@@ -35,7 +35,7 @@
     }
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 5;
 }
@@ -59,7 +59,7 @@
     return [UITableViewCell new];
 }
 
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewAutomaticDimension;
 }
@@ -68,12 +68,12 @@
     NSLog(@"ShoppingCartController didSelectRowAtIndexPath %@",indexPath);
 }
 
-//MARK:- ShopNameCellDelegate
+//MARK: - ShopNameCellDelegate
 - (void)didDeleteShopCartButtonClickAtCell:(ShopNameCell *)cell {
     NSIndexPath *indexPath = [self.shoppingCartTableView indexPathForCell:cell];
     NSLog(@"didDeleteShopCartButtonClickAtCell %@",indexPath);
 }
-//MARK:- Action
+//MARK: - Action
 - (void)rightBarButtonItemClick {
     NSLog(@"ShoppingCartController rightBarButtonItemClick");
 }

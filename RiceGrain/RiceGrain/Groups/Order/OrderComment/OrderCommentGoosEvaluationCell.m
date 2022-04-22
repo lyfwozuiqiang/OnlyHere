@@ -31,7 +31,7 @@
     }
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)commentButtonClick:(UIButton *)sender {
     if ([self.delegate respondsToSelector:@selector(goosEvaluationCell:didCommentButtonClickWithTag:)]) {
         [self.delegate goosEvaluationCell:self didCommentButtonClickWithTag:sender.tag];

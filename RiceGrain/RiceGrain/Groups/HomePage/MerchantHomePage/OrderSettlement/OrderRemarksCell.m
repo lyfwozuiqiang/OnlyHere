@@ -15,7 +15,7 @@
 
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)remarkTextFieldEditingChanged:(UITextField *)sender {
     if ([self.delegate respondsToSelector:@selector(didRemarksChanged:)]) {
         [self.delegate didRemarksChanged:sender.text];

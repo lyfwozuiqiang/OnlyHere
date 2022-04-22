@@ -26,7 +26,7 @@
     [self.myMessagesTableView registerNib:[UINib nibWithNibName:@"MyMessagesCell" bundle:nil] forCellReuseIdentifier:@"MyMessagesCell"];
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.messagesArray.count;
 }
@@ -36,12 +36,12 @@
     cell.messageString = self.messagesArray[indexPath.row];
     return cell;
 }
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewAutomaticDimension;
 }
 
-//MARK:- Lazy
+//MARK: - Lazy
 - (NSArray *)messagesArray {
     if (!_messagesArray) {
         _messagesArray = [NSArray arrayWithObjects:@"您于2020-09-09 19：00：00在茶颜悦色使用付款码扣款成功，金额为99元",@"您于2020-09-09 19：00：00在茶颜悦色使用付款码扣款成功，金额为99元",@"您于2020-09-09 19：00：00在茶颜悦色使用付款码扣款成功，金额为99元",@"您于2020-09-09 19：00：00在茶颜悦色使用付款码扣款成功，金额为99元",@"您于2020-09-09 19：00：00在茶颜悦色使用付款码扣款成功，金额为99元",@"您于2020-09-09 19：00：00在茶颜悦色使用付款码扣款成功，金额为99元",@"您于2020-09-09 19：00：00在茶颜悦色使用付款码扣款成功，金额为99元",@"您于2020-09-09 19：00：00在茶颜悦色使用付款码扣款成功，金额为99元",@"您于2020-09-09 19：00：00在茶颜悦色使用付款码扣款成功，金额为99元", nil];

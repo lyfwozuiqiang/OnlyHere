@@ -27,7 +27,7 @@
     // Configure the view for the selected state
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)deleteButtonClick {
     if ([self.delegate respondsToSelector:@selector(didDeleteShopCartButtonClickAtCell:)]) {
         [self.delegate didDeleteShopCartButtonClickAtCell:self];

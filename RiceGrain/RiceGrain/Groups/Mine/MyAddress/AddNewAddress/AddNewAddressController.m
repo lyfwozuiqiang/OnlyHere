@@ -22,7 +22,7 @@
     self.title = @"新增收货地址";
 }
 
-//MARK:- UITextViewDelegate
+//MARK: - UITextViewDelegate
 - (void)textViewDidChange:(UITextView *)textView {
     if (textView.text.length > 0) {
         self.placeholderLabel.hidden = YES;
@@ -30,7 +30,7 @@
         self.placeholderLabel.hidden = NO;
     }
 }
-//MARK:- Action
+//MARK: - Action
 - (IBAction)saveAnfUseButtonClick {
     [self.navigationController popViewControllerAnimated:YES];
 }

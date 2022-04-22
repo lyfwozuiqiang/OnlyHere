@@ -34,7 +34,7 @@
     self.rightImageView.image = ImageNamed(imageArray.lastObject);
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)leftButtonClick {
     if ([self.delegate respondsToSelector:@selector(mineTableViewCell:didClickItemWithTitle:)]) {
         [self.delegate mineTableViewCell:self didClickItemWithTitle:self.titleArray.firstObject];

@@ -22,7 +22,7 @@
     // Initialization code
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)paymentTypeButtonClick:(UIButton *)sender {
     if ([self.delegate respondsToSelector:@selector(didPaymentTypeSelectedAtIndex:)]) {
         [self.delegate didPaymentTypeSelectedAtIndex:sender.tag];

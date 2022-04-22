@@ -37,7 +37,7 @@
     [self changeSendVerityCodeButtonEnable:NO];
 }
 
-//MARK:- UITextFieldDelegate
+//MARK: - UITextFieldDelegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     NSString *changedString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     if (textField == self.phoneNumberTextField) {
@@ -46,7 +46,7 @@
         return changedString.length <= 6;
     }
 }
-//MARK:- Action
+//MARK: - Action
 - (void)leftBarButtonItemClick {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -112,7 +112,7 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-//MARK:- Method
+//MARK: - Method
 - (void)changeSendVerityCodeButtonEnable:(BOOL)enable {
     self.sendVerifyCodeButton.enabled = enable;
     if (enable) {

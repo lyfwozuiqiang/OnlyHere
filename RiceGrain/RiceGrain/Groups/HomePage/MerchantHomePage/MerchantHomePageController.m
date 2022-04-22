@@ -60,7 +60,7 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 3;
 }
@@ -93,7 +93,7 @@
     }
 }
 
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         return 150;
@@ -121,7 +121,7 @@
     }
 }
 
-//MARK:- Action
+//MARK: - Action
 - (IBAction)backButtonClick {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -174,7 +174,7 @@
     [self.moreInfoView removeFromSuperview];
 }
 
-//MARK:- Method
+//MARK: - Method
 - (void)setShoppingCartInterface {
     self.shoppingCartBackgroundView.layer.shadowOffset = CGSizeZero;
     self.shoppingCartBackgroundView.layer.shadowColor = [UIColor blackColor].CGColor;
@@ -192,7 +192,7 @@
     [self.settleButton setTitle:title forState:UIControlStateNormal];
 }
 
-//MARK:- Lazy
+//MARK: - Lazy
 - (ShoppingCartView *)cartView {
     if (!_cartView) {
         _cartView = [ShoppingCartView cartView];
